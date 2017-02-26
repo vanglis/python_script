@@ -1,0 +1,3097 @@
+0:   {"statusCode":"0000","Matrix":{"1":[1,4,2],"2":[9,1,1],"3":[9,9,1],"4":[8,1,7],"5":[9,5,2]},"lines":[{"num":4,"val":[[1,1],[2,2],[3,3],[4,2]]}],"prizeAmount":3000,"rewardPoint":0,"fu":{"statusCode":"0000","point":363485,"batchNo":"FP_3838_74_14346300887"}}
+1:   {"statusCode":"0000","Matrix":{"1":[3,7,9],"2":[9,9,9],"3":[8,1,7],"4":[5,1,4],"5":[1,9,1]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":363665,"batchNo":"FP_3838_74_14346300887"}}
+0: <!DOCTYPE html>
+<html>
+<head>
+    <title>7月积分排行榜</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="平安游戏,万里通游戏,游戏平台" />
+    <meta name="description" content="平安游戏，万里通游戏" />
+    <meta charset="utf-8" />
+    <meta name="copyright"  content="Copyright &copy;中国平安 版权所有" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="/files/css/activity/pointgame-wap/pointgame-wap-v6.css?v=201507092310" />
+    <script type="text/javascript" src="/files/js/main.js?v=201507092310"></script>
+    <script type="text/javascript">
+        !function(){
+            var htmlEl = document.getElementsByTagName('html')[0];
+            var fitPage = function(){
+                /* The calculate of with from zepto  */
+                var w = htmlEl.getBoundingClientRect().width;
+                w = Math.round(w);
+                w = w > 640 ? 640: w;
+                var newW = w/640 * 100;
+                htmlEl.style.fontSize = newW + 'px';
+            }
+            fitPage();
+
+            var t;
+            var func = function(){
+                clearTimeout(t);
+                t = setTimeout(fitPage, 25);
+            }
+            window.addEventListener('resize', func);
+        }();
+
+    </script>
+</head>
+<body>
+<div class="pointgame">
+    <div class="back-top"></div>
+    <div class="pg-top">
+        <span class="icons-bg pg-back" id='J_back' style='display: none;'></span>
+        
+        <script>
+            !function(){
+                var $back = document.getElementById('J_back');
+                if($back && window.PAG_JS && PAG_JS.downloadGame){
+                    $back.style.display = 'block';
+                    $back.addEventListener('click', function(e){
+                        e.preventDefault();
+                        var link = ''.substr(1);
+                        Client.openUrlInApp(link, "", 'WA');
+                    });
+                }
+            }();
+        </script>
+
+        <div class="pg-time">
+            <p class="pg-p1">2015年7月3日-7月30日</p>
+            <p class="pg-p2">活动期间，押注排名前列的玩家，可获得实物大奖哦!</p>
+        </div>
+        <a href="#rule-all" class="icons-bg pg-rule"></a>
+    </div>
+    <div class="pg-gifts">
+
+    </div>
+    <div class="pg-btn"><a href="?act=game_line&amp;st=play&amp;amount=1000&amp;line=9" class="btn-go">立即游戏</a></div>
+    <div class="list-news">
+        <div class="pg-list-down">
+            <div class="pg-check">
+                <div class="check-bg">
+                    <span class="icons-bg check-result"></span>
+                                            <span class="style-three">
+                            <span class="myrank">今日我的排名：</span><span class="ranknum">>100名</span>
+                        </span>
+                                    </div>
+                <div class="check-tab">
+                    <span class="icons-bg tab-one cur">今日排名</span>
+                    <span class="icons-bg tab-one">07月12日分奖</span>
+                    <span class="icons-bg tab-one">分奖说明</span>
+                </div>
+                <div class="check-detail">
+                    <div class="tab-detail">
+                                                <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                            <tr>
+                                <th width="30%">排名</th>
+                                <th width="35%">玩家名称（前100位）</th>
+                                <th width="35%">积分(个)</th>
+                            </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                                        </tbody>
+                        </table>
+                                            </div>
+                    <div class="tab-detail" style="display:none;">
+                                                <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                            <tr>
+                                <th width="30%">排名</th>
+                                <th width="35%">玩家名称（前50位）</th>
+                                <th width="35%">分奖说明</th>
+                            </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                                        </tbody>
+                        </table>
+                                            </div>
+                    <div class="tab-detail" style="display:none;">
+                        <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                                <tr>
+                                    <th width="30%">排名</th>
+                                    <th width="35%">T点数量（个）</th>
+                                    <th width="35%">价值（元）</th>
+                                </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                <tr>
+                                    <td ><span class="icons-bg num-four"></span></td>
+                                    <td class="yellow">100000</td>
+                                    <td class="yellow">200</td>
+                                </tr>
+                                <tr>
+                                    <td class=""><span class="icons-bg num-five"></span></td>
+                                    <td class="yellow">90000</td>
+                                    <td class="yellow">180</td>
+                                </tr>
+                                <tr>
+                                    <td class=""><span class="icons-bg num-six"></span></td>
+                                    <td class="yellow">75000</td>
+                                    <td class="yellow">150</td>
+                                </tr>
+                                <tr>
+                                    <td class="">4</td>
+                                    <td class="yellow">60000</td>
+                                    <td class="yellow">120</td>
+                                </tr>
+                                <tr>
+                                    <td class="">5</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">6</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">7</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">8</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">9</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">10</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">11</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">12</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">13</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">14</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">15</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">16</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">17</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">18</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">19</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">20</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">21</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">22</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">23</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">24</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">25</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">26</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">27</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">28</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">29</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">30</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">31</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">32</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">33</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">34</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">35</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">36</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">37</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">38</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">39</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">40</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">41</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">42</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">43</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">44</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">45</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">46</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">47</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">48</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">49</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">50</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="rule-all" class="rule-all">
+        <div class="rule-main ra-main">
+            <span class="ra-title">游戏规则
+            </span>
+            <ul class="rule-con">
+                    <li>活动时间：2015年7月3日-7月30日</li>
+                    <li>在活动时间内，参与指定的积分游戏（疯狂猜大小、疯狂弹珠机、疯狂赛车、疯狂马戏团、疯狂小苹果、中超争霸、疯狂翻牌、疯狂轮盘、疯狂扑克、疯狂抢钻石、疯狂拼点、疯狂马戏团2） 且当天游戏押注总额排名前50的用户，将在次日1点的时候，获得万里通积分奖励。平安玩账户将获得等额的T点奖励。点击查看T点奖励规则。
+                    </li>
+                    <li>本期活动排名根据用户类型，分为荣誉榜和新手榜。</br>
+                        <span  class="word-color">A． 荣誉榜：活动之前注册过平安游戏的用户（不包含新注册用户）的押注总额累计排名。</span>
+                        </br>
+                        <span  class="word-color">B． 新手榜：所有新注册平安游戏的用户。</span>
+                    </li>
+                    <li>每天荣誉榜排名第一名的用户，都将额外获得小米Note手机一台（全网通版价值2099元）或等值2000元T点。
+                    </li>
+                    <li> 每天新手榜排名第一名的用户，将额外获得500元T点奖励（自动发放）。
+                        注：若新手榜第一名当日消耗大于荣誉榜第一名用户消耗，也可获赠小米Note手机一台。
+                    </li>
+
+                    <li>活动排名每天单独计算，所有指定的游戏共同累计。次日清空重新累计。用户可以查询当天的排名情况和前一天的分奖排名。
+                    </li>
+                    <li>  赠送的万里通积分/T点将在次日1点自动发放到玩家账户，发放时间可能有先后，请您耐心等待。
+                    </li>
+                </ul>
+            </ul>
+            <div class="rc-con">
+                <span class="rc-con-title">最终实物奖</span>
+                <ul>
+                        <li> 从7月3日-7月30日在荣誉榜押注排名前列的玩家可以获得。</li>
+                        <li class="word-color">一等奖 1名  智能两轮平衡车或等值10000元T点。
+                            （7月3日-7月30日累计押注第1名用户）；
+                        </li>
+                        <li class="word-color">二等奖 3名  AppleWatch Sport版38mm或等值2500元T点
+                            （7月3日-7月30日累计押注第2-4名用户）；
+                        </li>
+                        <li class="word-color">三等奖 10名 价值200元T点
+                            （7月3日-7月30日累计押注第2-4名用户）；
+                        </li>
+                        <li>终极奖励将在活动结束7个工作日内公布并联系中奖用户。</li>
+                        <li>终极奖励需要用户绑定手机号码，请保持手机畅通，我们将及时与中奖用户取得联系。若在中奖名单公布后超过7个工作日未能联系上，视为该用户放弃获奖权利。
+                        </li>
+                        <li>活动期间如有几名用户所押注总额同时达到上限，则先达到该上限的用户为第一名。其余名次按时间顺延。
+                        </li>
+                        <li> 关于本活动如有任何疑问，请联系官方客服 : <span  class="word-color">400 636 6612</span>。</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/files/js/zepto-1.1.6.js?v=201507092310"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.check-tab .tab-one').click(function(e) {
+            $(this).addClass('cur').siblings().removeClass('cur')
+            var num = $(this).index()
+            $(this).parents('.pg-check').find('.tab-detail').eq(num).show().siblings().hide()
+
+        });
+        $('.list-news .pg-list-tab span').click(function(e) {
+            $(this).addClass('tab-cur').siblings().removeClass('tab-cur')
+            var num = $(this).index()
+            $('.pg-list-down .pg-check').eq(num).show().siblings().hide()
+        });
+        $('.pg-rule').click(function(e) {
+            $('.rule-cover').show();
+        });
+        $('.c-close').click(function(e) {
+            $('.rule-cover').hide();
+        });
+    });
+
+
+    !(function(){
+        //数据埋点js
+        var _paq = {site:'gameapp',domain:window.location.host};
+        _paq.userId = '';
+        _paq.userType = 0;
+        if(location.protocol.toLowerCase() == "http:"){
+            document.write(decodeURIComponent("%3Cscript src='//h1.jkimg.net/webstat/pa_beacon_cdn.js' type='text/javascript' %3E%3C/script%3E"));
+        }else{
+            document.write(decodeURIComponent("%3Cscript src='//webstat.wanlitong.com/js/pa_beacon_https.js' type='text/javascript' %3E%3C/script%3E"));
+        }
+    })();
+</script>
+</body>
+</html>
+
+1:   {"statusCode":"0000","Matrix":{"1":[1,9,9],"2":[8,1,5],"3":[9,9,1],"4":[9,3,4],"5":[9,9,1]},"lines":[{"num":4,"val":[[1,1],[2,2],[3,3]]}],"prizeAmount":2000,"rewardPoint":0,"fu":{"statusCode":"0000","point":363755,"batchNo":"FP_3838_74_14346300887"}}
+0: <!DOCTYPE html>
+<html>
+<head>
+    <title>7月积分排行榜</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="平安游戏,万里通游戏,游戏平台" />
+    <meta name="description" content="平安游戏，万里通游戏" />
+    <meta charset="utf-8" />
+    <meta name="copyright"  content="Copyright &copy;中国平安 版权所有" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="/files/css/activity/pointgame-wap/pointgame-wap-v6.css?v=201507092310" />
+    <script type="text/javascript" src="/files/js/main.js?v=201507092310"></script>
+    <script type="text/javascript">
+        !function(){
+            var htmlEl = document.getElementsByTagName('html')[0];
+            var fitPage = function(){
+                /* The calculate of with from zepto  */
+                var w = htmlEl.getBoundingClientRect().width;
+                w = Math.round(w);
+                w = w > 640 ? 640: w;
+                var newW = w/640 * 100;
+                htmlEl.style.fontSize = newW + 'px';
+            }
+            fitPage();
+
+            var t;
+            var func = function(){
+                clearTimeout(t);
+                t = setTimeout(fitPage, 25);
+            }
+            window.addEventListener('resize', func);
+        }();
+
+    </script>
+</head>
+<body>
+<div class="pointgame">
+    <div class="back-top"></div>
+    <div class="pg-top">
+        <span class="icons-bg pg-back" id='J_back' style='display: none;'></span>
+        
+        <script>
+            !function(){
+                var $back = document.getElementById('J_back');
+                if($back && window.PAG_JS && PAG_JS.downloadGame){
+                    $back.style.display = 'block';
+                    $back.addEventListener('click', function(e){
+                        e.preventDefault();
+                        var link = ''.substr(1);
+                        Client.openUrlInApp(link, "", 'WA');
+                    });
+                }
+            }();
+        </script>
+
+        <div class="pg-time">
+            <p class="pg-p1">2015年7月3日-7月30日</p>
+            <p class="pg-p2">活动期间，押注排名前列的玩家，可获得实物大奖哦!</p>
+        </div>
+        <a href="#rule-all" class="icons-bg pg-rule"></a>
+    </div>
+    <div class="pg-gifts">
+
+    </div>
+    <div class="pg-btn"><a href="?act=game_line&amp;st=play&amp;amount=1000&amp;line=9" class="btn-go">立即游戏</a></div>
+    <div class="list-news">
+        <div class="pg-list-down">
+            <div class="pg-check">
+                <div class="check-bg">
+                    <span class="icons-bg check-result"></span>
+                                            <span class="style-three">
+                            <span class="myrank">今日我的排名：</span><span class="ranknum">>100名</span>
+                        </span>
+                                    </div>
+                <div class="check-tab">
+                    <span class="icons-bg tab-one cur">今日排名</span>
+                    <span class="icons-bg tab-one">07月12日分奖</span>
+                    <span class="icons-bg tab-one">分奖说明</span>
+                </div>
+                <div class="check-detail">
+                    <div class="tab-detail">
+                                                <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                            <tr>
+                                <th width="30%">排名</th>
+                                <th width="35%">玩家名称（前100位）</th>
+                                <th width="35%">积分(个)</th>
+                            </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                                        </tbody>
+                        </table>
+                                            </div>
+                    <div class="tab-detail" style="display:none;">
+                                                <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                            <tr>
+                                <th width="30%">排名</th>
+                                <th width="35%">玩家名称（前50位）</th>
+                                <th width="35%">分奖说明</th>
+                            </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                                        </tbody>
+                        </table>
+                                            </div>
+                    <div class="tab-detail" style="display:none;">
+                        <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                                <tr>
+                                    <th width="30%">排名</th>
+                                    <th width="35%">T点数量（个）</th>
+                                    <th width="35%">价值（元）</th>
+                                </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                <tr>
+                                    <td ><span class="icons-bg num-four"></span></td>
+                                    <td class="yellow">100000</td>
+                                    <td class="yellow">200</td>
+                                </tr>
+                                <tr>
+                                    <td class=""><span class="icons-bg num-five"></span></td>
+                                    <td class="yellow">90000</td>
+                                    <td class="yellow">180</td>
+                                </tr>
+                                <tr>
+                                    <td class=""><span class="icons-bg num-six"></span></td>
+                                    <td class="yellow">75000</td>
+                                    <td class="yellow">150</td>
+                                </tr>
+                                <tr>
+                                    <td class="">4</td>
+                                    <td class="yellow">60000</td>
+                                    <td class="yellow">120</td>
+                                </tr>
+                                <tr>
+                                    <td class="">5</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">6</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">7</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">8</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">9</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">10</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">11</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">12</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">13</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">14</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">15</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">16</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">17</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">18</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">19</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">20</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">21</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">22</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">23</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">24</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">25</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">26</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">27</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">28</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">29</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">30</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">31</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">32</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">33</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">34</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">35</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">36</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">37</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">38</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">39</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">40</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">41</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">42</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">43</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">44</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">45</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">46</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">47</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">48</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">49</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">50</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="rule-all" class="rule-all">
+        <div class="rule-main ra-main">
+            <span class="ra-title">游戏规则
+            </span>
+            <ul class="rule-con">
+                    <li>活动时间：2015年7月3日-7月30日</li>
+                    <li>在活动时间内，参与指定的积分游戏（疯狂猜大小、疯狂弹珠机、疯狂赛车、疯狂马戏团、疯狂小苹果、中超争霸、疯狂翻牌、疯狂轮盘、疯狂扑克、疯狂抢钻石、疯狂拼点、疯狂马戏团2） 且当天游戏押注总额排名前50的用户，将在次日1点的时候，获得万里通积分奖励。平安玩账户将获得等额的T点奖励。点击查看T点奖励规则。
+                    </li>
+                    <li>本期活动排名根据用户类型，分为荣誉榜和新手榜。</br>
+                        <span  class="word-color">A． 荣誉榜：活动之前注册过平安游戏的用户（不包含新注册用户）的押注总额累计排名。</span>
+                        </br>
+                        <span  class="word-color">B． 新手榜：所有新注册平安游戏的用户。</span>
+                    </li>
+                    <li>每天荣誉榜排名第一名的用户，都将额外获得小米Note手机一台（全网通版价值2099元）或等值2000元T点。
+                    </li>
+                    <li> 每天新手榜排名第一名的用户，将额外获得500元T点奖励（自动发放）。
+                        注：若新手榜第一名当日消耗大于荣誉榜第一名用户消耗，也可获赠小米Note手机一台。
+                    </li>
+
+                    <li>活动排名每天单独计算，所有指定的游戏共同累计。次日清空重新累计。用户可以查询当天的排名情况和前一天的分奖排名。
+                    </li>
+                    <li>  赠送的万里通积分/T点将在次日1点自动发放到玩家账户，发放时间可能有先后，请您耐心等待。
+                    </li>
+                </ul>
+            </ul>
+            <div class="rc-con">
+                <span class="rc-con-title">最终实物奖</span>
+                <ul>
+                        <li> 从7月3日-7月30日在荣誉榜押注排名前列的玩家可以获得。</li>
+                        <li class="word-color">一等奖 1名  智能两轮平衡车或等值10000元T点。
+                            （7月3日-7月30日累计押注第1名用户）；
+                        </li>
+                        <li class="word-color">二等奖 3名  AppleWatch Sport版38mm或等值2500元T点
+                            （7月3日-7月30日累计押注第2-4名用户）；
+                        </li>
+                        <li class="word-color">三等奖 10名 价值200元T点
+                            （7月3日-7月30日累计押注第2-4名用户）；
+                        </li>
+                        <li>终极奖励将在活动结束7个工作日内公布并联系中奖用户。</li>
+                        <li>终极奖励需要用户绑定手机号码，请保持手机畅通，我们将及时与中奖用户取得联系。若在中奖名单公布后超过7个工作日未能联系上，视为该用户放弃获奖权利。
+                        </li>
+                        <li>活动期间如有几名用户所押注总额同时达到上限，则先达到该上限的用户为第一名。其余名次按时间顺延。
+                        </li>
+                        <li> 关于本活动如有任何疑问，请联系官方客服 : <span  class="word-color">400 636 6612</span>。</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/files/js/zepto-1.1.6.js?v=201507092310"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.check-tab .tab-one').click(function(e) {
+            $(this).addClass('cur').siblings().removeClass('cur')
+            var num = $(this).index()
+            $(this).parents('.pg-check').find('.tab-detail').eq(num).show().siblings().hide()
+
+        });
+        $('.list-news .pg-list-tab span').click(function(e) {
+            $(this).addClass('tab-cur').siblings().removeClass('tab-cur')
+            var num = $(this).index()
+            $('.pg-list-down .pg-check').eq(num).show().siblings().hide()
+        });
+        $('.pg-rule').click(function(e) {
+            $('.rule-cover').show();
+        });
+        $('.c-close').click(function(e) {
+            $('.rule-cover').hide();
+        });
+    });
+
+
+    !(function(){
+        //数据埋点js
+        var _paq = {site:'gameapp',domain:window.location.host};
+        _paq.userId = '';
+        _paq.userType = 0;
+        if(location.protocol.toLowerCase() == "http:"){
+            document.write(decodeURIComponent("%3Cscript src='//h1.jkimg.net/webstat/pa_beacon_cdn.js' type='text/javascript' %3E%3C/script%3E"));
+        }else{
+            document.write(decodeURIComponent("%3Cscript src='//webstat.wanlitong.com/js/pa_beacon_https.js' type='text/javascript' %3E%3C/script%3E"));
+        }
+    })();
+</script>
+</body>
+</html>
+
+1:   {"statusCode":"0000","Matrix":{"1":[6,8,5],"2":[9,9,8],"3":[9,9,9],"4":[9,8,4],"5":[9,6,6]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":363845,"batchNo":"FP_3838_74_14346300887"}}
+0: <!DOCTYPE html>
+<html>
+<head>
+    <title>7月积分排行榜</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="平安游戏,万里通游戏,游戏平台" />
+    <meta name="description" content="平安游戏，万里通游戏" />
+    <meta charset="utf-8" />
+    <meta name="copyright"  content="Copyright &copy;中国平安 版权所有" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="/files/css/activity/pointgame-wap/pointgame-wap-v6.css?v=201507131609" />
+    <script type="text/javascript" src="/files/js/main.js?v=201507131609"></script>
+    <script type="text/javascript">
+        !function(){
+            var htmlEl = document.getElementsByTagName('html')[0];
+            var fitPage = function(){
+                /* The calculate of with from zepto  */
+                var w = htmlEl.getBoundingClientRect().width;
+                w = Math.round(w);
+                w = w > 640 ? 640: w;
+                var newW = w/640 * 100;
+                htmlEl.style.fontSize = newW + 'px';
+            }
+            fitPage();
+
+            var t;
+            var func = function(){
+                clearTimeout(t);
+                t = setTimeout(fitPage, 25);
+            }
+            window.addEventListener('resize', func);
+        }();
+
+    </script>
+</head>
+<body>
+<div class="pointgame">
+    <div class="back-top"></div>
+    <div class="pg-top">
+        <span class="icons-bg pg-back" id='J_back' style='display: none;'></span>
+        
+        <script>
+            !function(){
+                var $back = document.getElementById('J_back');
+                if($back && window.PAG_JS && PAG_JS.downloadGame){
+                    $back.style.display = 'block';
+                    $back.addEventListener('click', function(e){
+                        e.preventDefault();
+                        var link = ''.substr(1);
+                        Client.openUrlInApp(link, "", 'WA');
+                    });
+                }
+            }();
+        </script>
+
+        <div class="pg-time">
+            <p class="pg-p1">2015年7月3日-7月30日</p>
+            <p class="pg-p2">活动期间，押注排名前列的玩家，可获得实物大奖哦!</p>
+        </div>
+        <a href="#rule-all" class="icons-bg pg-rule"></a>
+    </div>
+    <div class="pg-gifts">
+
+    </div>
+    <div class="pg-btn"><a href="?act=game_line&amp;st=play&amp;amount=1000&amp;line=9" class="btn-go">立即游戏</a></div>
+    <div class="list-news">
+        <div class="pg-list-down">
+            <div class="pg-check">
+                <div class="check-bg">
+                    <span class="icons-bg check-result"></span>
+                                            <span class="style-three">
+                            <span class="myrank">今日我的排名：</span><span class="ranknum">>100名</span>
+                        </span>
+                                    </div>
+                <div class="check-tab">
+                    <span class="icons-bg tab-one cur">今日排名</span>
+                    <span class="icons-bg tab-one">07月13日分奖</span>
+                    <span class="icons-bg tab-one">分奖说明</span>
+                </div>
+                <div class="check-detail">
+                    <div class="tab-detail">
+                                                <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                            <tr>
+                                <th width="30%">排名</th>
+                                <th width="35%">玩家名称（前100位）</th>
+                                <th width="35%">积分(个)</th>
+                            </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                                        </tbody>
+                        </table>
+                                            </div>
+                    <div class="tab-detail" style="display:none;">
+                                                <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                            <tr>
+                                <th width="30%">排名</th>
+                                <th width="35%">玩家名称（前50位）</th>
+                                <th width="35%">分奖说明</th>
+                            </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                                        </tbody>
+                        </table>
+                                            </div>
+                    <div class="tab-detail" style="display:none;">
+                        <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                                <tr>
+                                    <th width="30%">排名</th>
+                                    <th width="35%">T点数量（个）</th>
+                                    <th width="35%">价值（元）</th>
+                                </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                <tr>
+                                    <td ><span class="icons-bg num-four"></span></td>
+                                    <td class="yellow">100000</td>
+                                    <td class="yellow">200</td>
+                                </tr>
+                                <tr>
+                                    <td class=""><span class="icons-bg num-five"></span></td>
+                                    <td class="yellow">90000</td>
+                                    <td class="yellow">180</td>
+                                </tr>
+                                <tr>
+                                    <td class=""><span class="icons-bg num-six"></span></td>
+                                    <td class="yellow">75000</td>
+                                    <td class="yellow">150</td>
+                                </tr>
+                                <tr>
+                                    <td class="">4</td>
+                                    <td class="yellow">60000</td>
+                                    <td class="yellow">120</td>
+                                </tr>
+                                <tr>
+                                    <td class="">5</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">6</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">7</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">8</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">9</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">10</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">11</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">12</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">13</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">14</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">15</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">16</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">17</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">18</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">19</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">20</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">21</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">22</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">23</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">24</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">25</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">26</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">27</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">28</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">29</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">30</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">31</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">32</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">33</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">34</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">35</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">36</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">37</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">38</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">39</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">40</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">41</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">42</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">43</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">44</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">45</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">46</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">47</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">48</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">49</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">50</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="rule-all" class="rule-all">
+        <div class="rule-main ra-main">
+            <span class="ra-title">游戏规则
+            </span>
+            <ul class="rule-con">
+                    <li>活动时间：2015年7月3日-7月30日</li>
+                    <li>在活动时间内，参与指定的积分游戏（疯狂猜大小、疯狂弹珠机、疯狂赛车、疯狂马戏团、疯狂小苹果、中超争霸、疯狂翻牌、疯狂轮盘、疯狂扑克、疯狂抢钻石、疯狂拼点、疯狂马戏团2） 且当天游戏押注总额排名前50的用户，将在次日1点的时候，获得万里通积分奖励。平安玩账户将获得等额的T点奖励。点击查看T点奖励规则。
+                    </li>
+                    <li>本期活动排名根据用户类型，分为荣誉榜和新手榜。</br>
+                        <span  class="word-color">A． 荣誉榜：活动之前注册过平安游戏的用户（不包含新注册用户）的押注总额累计排名。</span>
+                        </br>
+                        <span  class="word-color">B． 新手榜：所有新注册平安游戏的用户。</span>
+                    </li>
+                    <li>每天荣誉榜排名第一名的用户，都将额外获得小米Note手机一台（全网通版价值2099元）或等值2000元T点。
+                    </li>
+                    <li> 每天新手榜排名第一名的用户，将额外获得500元T点奖励（自动发放）。
+                        注：若新手榜第一名当日消耗大于荣誉榜第一名用户消耗，也可获赠小米Note手机一台。
+                    </li>
+
+                    <li>活动排名每天单独计算，所有指定的游戏共同累计。次日清空重新累计。用户可以查询当天的排名情况和前一天的分奖排名。
+                    </li>
+                    <li>  赠送的万里通积分/T点将在次日1点自动发放到玩家账户，发放时间可能有先后，请您耐心等待。
+                    </li>
+                </ul>
+            </ul>
+            <div class="rc-con">
+                <span class="rc-con-title">最终实物奖</span>
+                <ul>
+                        <li> 从7月3日-7月30日在荣誉榜押注排名前列的玩家可以获得。</li>
+                        <li class="word-color">一等奖 1名  智能两轮平衡车或等值10000元T点。
+                            （7月3日-7月30日累计押注第1名用户）；
+                        </li>
+                        <li class="word-color">二等奖 3名  AppleWatch Sport版38mm或等值2500元T点
+                            （7月3日-7月30日累计押注第2-4名用户）；
+                        </li>
+                        <li class="word-color">三等奖 10名 价值200元T点
+                            （7月3日-7月30日累计押注第2-4名用户）；
+                        </li>
+                        <li>终极奖励将在活动结束7个工作日内公布并联系中奖用户。</li>
+                        <li>终极奖励需要用户绑定手机号码，请保持手机畅通，我们将及时与中奖用户取得联系。若在中奖名单公布后超过7个工作日未能联系上，视为该用户放弃获奖权利。
+                        </li>
+                        <li>活动期间如有几名用户所押注总额同时达到上限，则先达到该上限的用户为第一名。其余名次按时间顺延。
+                        </li>
+                        <li> 关于本活动如有任何疑问，请联系官方客服 : <span  class="word-color">400 636 6612</span>。</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/files/js/zepto-1.1.6.js?v=201507131609"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.check-tab .tab-one').click(function(e) {
+            $(this).addClass('cur').siblings().removeClass('cur')
+            var num = $(this).index()
+            $(this).parents('.pg-check').find('.tab-detail').eq(num).show().siblings().hide()
+
+        });
+        $('.list-news .pg-list-tab span').click(function(e) {
+            $(this).addClass('tab-cur').siblings().removeClass('tab-cur')
+            var num = $(this).index()
+            $('.pg-list-down .pg-check').eq(num).show().siblings().hide()
+        });
+        $('.pg-rule').click(function(e) {
+            $('.rule-cover').show();
+        });
+        $('.c-close').click(function(e) {
+            $('.rule-cover').hide();
+        });
+    });
+
+
+    !(function(){
+        //数据埋点js
+        var _paq = {site:'gameapp',domain:window.location.host};
+        _paq.userId = '';
+        _paq.userType = 0;
+        if(location.protocol.toLowerCase() == "http:"){
+            document.write(decodeURIComponent("%3Cscript src='//h1.jkimg.net/webstat/pa_beacon_cdn.js' type='text/javascript' %3E%3C/script%3E"));
+        }else{
+            document.write(decodeURIComponent("%3Cscript src='//webstat.wanlitong.com/js/pa_beacon_https.js' type='text/javascript' %3E%3C/script%3E"));
+        }
+    })();
+</script>
+</body>
+</html>
+
+1:   {"statusCode":"0000","Matrix":{"1":[9,7,2],"2":[9,9,9],"3":[8,3,2],"4":[7,9,6],"5":[8,8,6]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":364487,"batchNo":"FP_3838_74_14346300887"}}
+0: <!DOCTYPE html>
+<html>
+<head>
+    <title>7月积分排行榜</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="平安游戏,万里通游戏,游戏平台" />
+    <meta name="description" content="平安游戏，万里通游戏" />
+    <meta charset="utf-8" />
+    <meta name="copyright"  content="Copyright &copy;中国平安 版权所有" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="/files/css/activity/pointgame-wap/pointgame-wap-v6.css?v=201507131609" />
+    <script type="text/javascript" src="/files/js/main.js?v=201507131609"></script>
+    <script type="text/javascript">
+        !function(){
+            var htmlEl = document.getElementsByTagName('html')[0];
+            var fitPage = function(){
+                /* The calculate of with from zepto  */
+                var w = htmlEl.getBoundingClientRect().width;
+                w = Math.round(w);
+                w = w > 640 ? 640: w;
+                var newW = w/640 * 100;
+                htmlEl.style.fontSize = newW + 'px';
+            }
+            fitPage();
+
+            var t;
+            var func = function(){
+                clearTimeout(t);
+                t = setTimeout(fitPage, 25);
+            }
+            window.addEventListener('resize', func);
+        }();
+
+    </script>
+</head>
+<body>
+<div class="pointgame">
+    <div class="back-top"></div>
+    <div class="pg-top">
+        <span class="icons-bg pg-back" id='J_back' style='display: none;'></span>
+        
+        <script>
+            !function(){
+                var $back = document.getElementById('J_back');
+                if($back && window.PAG_JS && PAG_JS.downloadGame){
+                    $back.style.display = 'block';
+                    $back.addEventListener('click', function(e){
+                        e.preventDefault();
+                        var link = ''.substr(1);
+                        Client.openUrlInApp(link, "", 'WA');
+                    });
+                }
+            }();
+        </script>
+
+        <div class="pg-time">
+            <p class="pg-p1">2015年7月3日-7月30日</p>
+            <p class="pg-p2">活动期间，押注排名前列的玩家，可获得实物大奖哦!</p>
+        </div>
+        <a href="#rule-all" class="icons-bg pg-rule"></a>
+    </div>
+    <div class="pg-gifts">
+
+    </div>
+    <div class="pg-btn"><a href="?act=game_line&amp;st=play&amp;amount=1000&amp;line=9" class="btn-go">立即游戏</a></div>
+    <div class="list-news">
+        <div class="pg-list-down">
+            <div class="pg-check">
+                <div class="check-bg">
+                    <span class="icons-bg check-result"></span>
+                                            <span class="style-three">
+                            <span class="myrank">今日我的排名：</span><span class="ranknum">>100名</span>
+                        </span>
+                                    </div>
+                <div class="check-tab">
+                    <span class="icons-bg tab-one cur">今日排名</span>
+                    <span class="icons-bg tab-one">07月13日分奖</span>
+                    <span class="icons-bg tab-one">分奖说明</span>
+                </div>
+                <div class="check-detail">
+                    <div class="tab-detail">
+                                                <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                            <tr>
+                                <th width="30%">排名</th>
+                                <th width="35%">玩家名称（前100位）</th>
+                                <th width="35%">积分(个)</th>
+                            </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                                        </tbody>
+                        </table>
+                                            </div>
+                    <div class="tab-detail" style="display:none;">
+                                                <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                            <tr>
+                                <th width="30%">排名</th>
+                                <th width="35%">玩家名称（前50位）</th>
+                                <th width="35%">分奖说明</th>
+                            </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                                        </tbody>
+                        </table>
+                                            </div>
+                    <div class="tab-detail" style="display:none;">
+                        <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                                <tr>
+                                    <th width="30%">排名</th>
+                                    <th width="35%">T点数量（个）</th>
+                                    <th width="35%">价值（元）</th>
+                                </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                <tr>
+                                    <td ><span class="icons-bg num-four"></span></td>
+                                    <td class="yellow">100000</td>
+                                    <td class="yellow">200</td>
+                                </tr>
+                                <tr>
+                                    <td class=""><span class="icons-bg num-five"></span></td>
+                                    <td class="yellow">90000</td>
+                                    <td class="yellow">180</td>
+                                </tr>
+                                <tr>
+                                    <td class=""><span class="icons-bg num-six"></span></td>
+                                    <td class="yellow">75000</td>
+                                    <td class="yellow">150</td>
+                                </tr>
+                                <tr>
+                                    <td class="">4</td>
+                                    <td class="yellow">60000</td>
+                                    <td class="yellow">120</td>
+                                </tr>
+                                <tr>
+                                    <td class="">5</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">6</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">7</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">8</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">9</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">10</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">11</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">12</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">13</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">14</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">15</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">16</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">17</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">18</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">19</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">20</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">21</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">22</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">23</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">24</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">25</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">26</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">27</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">28</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">29</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">30</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">31</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">32</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">33</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">34</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">35</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">36</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">37</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">38</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">39</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">40</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">41</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">42</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">43</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">44</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">45</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">46</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">47</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">48</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">49</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">50</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="rule-all" class="rule-all">
+        <div class="rule-main ra-main">
+            <span class="ra-title">游戏规则
+            </span>
+            <ul class="rule-con">
+                    <li>活动时间：2015年7月3日-7月30日</li>
+                    <li>在活动时间内，参与指定的积分游戏（疯狂猜大小、疯狂弹珠机、疯狂赛车、疯狂马戏团、疯狂小苹果、中超争霸、疯狂翻牌、疯狂轮盘、疯狂扑克、疯狂抢钻石、疯狂拼点、疯狂马戏团2） 且当天游戏押注总额排名前50的用户，将在次日1点的时候，获得万里通积分奖励。平安玩账户将获得等额的T点奖励。点击查看T点奖励规则。
+                    </li>
+                    <li>本期活动排名根据用户类型，分为荣誉榜和新手榜。</br>
+                        <span  class="word-color">A． 荣誉榜：活动之前注册过平安游戏的用户（不包含新注册用户）的押注总额累计排名。</span>
+                        </br>
+                        <span  class="word-color">B． 新手榜：所有新注册平安游戏的用户。</span>
+                    </li>
+                    <li>每天荣誉榜排名第一名的用户，都将额外获得小米Note手机一台（全网通版价值2099元）或等值2000元T点。
+                    </li>
+                    <li> 每天新手榜排名第一名的用户，将额外获得500元T点奖励（自动发放）。
+                        注：若新手榜第一名当日消耗大于荣誉榜第一名用户消耗，也可获赠小米Note手机一台。
+                    </li>
+
+                    <li>活动排名每天单独计算，所有指定的游戏共同累计。次日清空重新累计。用户可以查询当天的排名情况和前一天的分奖排名。
+                    </li>
+                    <li>  赠送的万里通积分/T点将在次日1点自动发放到玩家账户，发放时间可能有先后，请您耐心等待。
+                    </li>
+                </ul>
+            </ul>
+            <div class="rc-con">
+                <span class="rc-con-title">最终实物奖</span>
+                <ul>
+                        <li> 从7月3日-7月30日在荣誉榜押注排名前列的玩家可以获得。</li>
+                        <li class="word-color">一等奖 1名  智能两轮平衡车或等值10000元T点。
+                            （7月3日-7月30日累计押注第1名用户）；
+                        </li>
+                        <li class="word-color">二等奖 3名  AppleWatch Sport版38mm或等值2500元T点
+                            （7月3日-7月30日累计押注第2-4名用户）；
+                        </li>
+                        <li class="word-color">三等奖 10名 价值200元T点
+                            （7月3日-7月30日累计押注第2-4名用户）；
+                        </li>
+                        <li>终极奖励将在活动结束7个工作日内公布并联系中奖用户。</li>
+                        <li>终极奖励需要用户绑定手机号码，请保持手机畅通，我们将及时与中奖用户取得联系。若在中奖名单公布后超过7个工作日未能联系上，视为该用户放弃获奖权利。
+                        </li>
+                        <li>活动期间如有几名用户所押注总额同时达到上限，则先达到该上限的用户为第一名。其余名次按时间顺延。
+                        </li>
+                        <li> 关于本活动如有任何疑问，请联系官方客服 : <span  class="word-color">400 636 6612</span>。</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/files/js/zepto-1.1.6.js?v=201507131609"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.check-tab .tab-one').click(function(e) {
+            $(this).addClass('cur').siblings().removeClass('cur')
+            var num = $(this).index()
+            $(this).parents('.pg-check').find('.tab-detail').eq(num).show().siblings().hide()
+
+        });
+        $('.list-news .pg-list-tab span').click(function(e) {
+            $(this).addClass('tab-cur').siblings().removeClass('tab-cur')
+            var num = $(this).index()
+            $('.pg-list-down .pg-check').eq(num).show().siblings().hide()
+        });
+        $('.pg-rule').click(function(e) {
+            $('.rule-cover').show();
+        });
+        $('.c-close').click(function(e) {
+            $('.rule-cover').hide();
+        });
+    });
+
+
+    !(function(){
+        //数据埋点js
+        var _paq = {site:'gameapp',domain:window.location.host};
+        _paq.userId = '';
+        _paq.userType = 0;
+        if(location.protocol.toLowerCase() == "http:"){
+            document.write(decodeURIComponent("%3Cscript src='//h1.jkimg.net/webstat/pa_beacon_cdn.js' type='text/javascript' %3E%3C/script%3E"));
+        }else{
+            document.write(decodeURIComponent("%3Cscript src='//webstat.wanlitong.com/js/pa_beacon_https.js' type='text/javascript' %3E%3C/script%3E"));
+        }
+    })();
+</script>
+</body>
+</html>
+
+1:   {"statusCode":"0000","Matrix":{"1":[1,6,7],"2":[9,9,7],"3":[9,9,9],"4":[1,9,6],"5":[7,9,8]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":364577,"batchNo":"FP_3838_74_14346300887"}}
+2:   {"statusCode":"0000","Matrix":{"1":[1,2,3],"2":[9,9,3],"3":[9,9,3],"4":[1,4,5],"5":[2,2,5]},"lines":[{"num":3,"val":[[1,3],[2,3],[3,3]]}],"prizeAmount":6000,"rewardPoint":0,"fu":{"statusCode":"0000","point":364667,"batchNo":"FP_3838_74_14346300887"}}
+0: <!DOCTYPE html>
+<html>
+<head>
+    <title>7月积分排行榜</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="平安游戏,万里通游戏,游戏平台" />
+    <meta name="description" content="平安游戏，万里通游戏" />
+    <meta charset="utf-8" />
+    <meta name="copyright"  content="Copyright &copy;中国平安 版权所有" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="/files/css/activity/pointgame-wap/pointgame-wap-v6.css?v=201507131609" />
+    <script type="text/javascript" src="/files/js/main.js?v=201507131609"></script>
+    <script type="text/javascript">
+        !function(){
+            var htmlEl = document.getElementsByTagName('html')[0];
+            var fitPage = function(){
+                /* The calculate of with from zepto  */
+                var w = htmlEl.getBoundingClientRect().width;
+                w = Math.round(w);
+                w = w > 640 ? 640: w;
+                var newW = w/640 * 100;
+                htmlEl.style.fontSize = newW + 'px';
+            }
+            fitPage();
+
+            var t;
+            var func = function(){
+                clearTimeout(t);
+                t = setTimeout(fitPage, 25);
+            }
+            window.addEventListener('resize', func);
+        }();
+
+    </script>
+</head>
+<body>
+<div class="pointgame">
+    <div class="back-top"></div>
+    <div class="pg-top">
+        <span class="icons-bg pg-back" id='J_back' style='display: none;'></span>
+        
+        <script>
+            !function(){
+                var $back = document.getElementById('J_back');
+                if($back && window.PAG_JS && PAG_JS.downloadGame){
+                    $back.style.display = 'block';
+                    $back.addEventListener('click', function(e){
+                        e.preventDefault();
+                        var link = ''.substr(1);
+                        Client.openUrlInApp(link, "", 'WA');
+                    });
+                }
+            }();
+        </script>
+
+        <div class="pg-time">
+            <p class="pg-p1">2015年7月3日-7月30日</p>
+            <p class="pg-p2">活动期间，押注排名前列的玩家，可获得实物大奖哦!</p>
+        </div>
+        <a href="#rule-all" class="icons-bg pg-rule"></a>
+    </div>
+    <div class="pg-gifts">
+
+    </div>
+    <div class="pg-btn"><a href="?act=game_line&amp;st=play&amp;amount=1000&amp;line=9" class="btn-go">立即游戏</a></div>
+    <div class="list-news">
+        <div class="pg-list-down">
+            <div class="pg-check">
+                <div class="check-bg">
+                    <span class="icons-bg check-result"></span>
+                                            <span class="style-three">
+                            <span class="myrank">今日我的排名：</span><span class="ranknum">>100名</span>
+                        </span>
+                                    </div>
+                <div class="check-tab">
+                    <span class="icons-bg tab-one cur">今日排名</span>
+                    <span class="icons-bg tab-one">07月14日分奖</span>
+                    <span class="icons-bg tab-one">分奖说明</span>
+                </div>
+                <div class="check-detail">
+                    <div class="tab-detail">
+                                                <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                            <tr>
+                                <th width="30%">排名</th>
+                                <th width="35%">玩家名称（前100位）</th>
+                                <th width="35%">积分(个)</th>
+                            </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                                        </tbody>
+                        </table>
+                                            </div>
+                    <div class="tab-detail" style="display:none;">
+                                                <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                            <tr>
+                                <th width="30%">排名</th>
+                                <th width="35%">玩家名称（前50位）</th>
+                                <th width="35%">分奖说明</th>
+                            </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                                        </tbody>
+                        </table>
+                                            </div>
+                    <div class="tab-detail" style="display:none;">
+                        <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                                <tr>
+                                    <th width="30%">排名</th>
+                                    <th width="35%">T点数量（个）</th>
+                                    <th width="35%">价值（元）</th>
+                                </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                <tr>
+                                    <td ><span class="icons-bg num-four"></span></td>
+                                    <td class="yellow">100000</td>
+                                    <td class="yellow">200</td>
+                                </tr>
+                                <tr>
+                                    <td class=""><span class="icons-bg num-five"></span></td>
+                                    <td class="yellow">90000</td>
+                                    <td class="yellow">180</td>
+                                </tr>
+                                <tr>
+                                    <td class=""><span class="icons-bg num-six"></span></td>
+                                    <td class="yellow">75000</td>
+                                    <td class="yellow">150</td>
+                                </tr>
+                                <tr>
+                                    <td class="">4</td>
+                                    <td class="yellow">60000</td>
+                                    <td class="yellow">120</td>
+                                </tr>
+                                <tr>
+                                    <td class="">5</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">6</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">7</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">8</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">9</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">10</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">11</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">12</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">13</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">14</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">15</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">16</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">17</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">18</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">19</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">20</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">21</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">22</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">23</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">24</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">25</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">26</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">27</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">28</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">29</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">30</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">31</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">32</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">33</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">34</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">35</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">36</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">37</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">38</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">39</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">40</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">41</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">42</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">43</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">44</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">45</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">46</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">47</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">48</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">49</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">50</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="rule-all" class="rule-all">
+        <div class="rule-main ra-main">
+            <span class="ra-title">游戏规则
+            </span>
+            <ul class="rule-con">
+                    <li>活动时间：2015年7月3日-7月30日</li>
+                    <li>在活动时间内，参与指定的积分游戏（疯狂猜大小、疯狂弹珠机、疯狂赛车、疯狂马戏团、疯狂小苹果、中超争霸、疯狂翻牌、疯狂轮盘、疯狂扑克、疯狂抢钻石、疯狂拼点、疯狂马戏团2） 且当天游戏押注总额排名前50的用户，将在次日1点的时候，获得万里通积分奖励。平安玩账户将获得等额的T点奖励。点击查看T点奖励规则。
+                    </li>
+                    <li>本期活动排名根据用户类型，分为荣誉榜和新手榜。</br>
+                        <span  class="word-color">A． 荣誉榜：活动之前注册过平安游戏的用户（不包含新注册用户）的押注总额累计排名。</span>
+                        </br>
+                        <span  class="word-color">B． 新手榜：所有新注册平安游戏的用户。</span>
+                    </li>
+                    <li>每天荣誉榜排名第一名的用户，都将额外获得小米Note手机一台（全网通版价值2099元）或等值2000元T点。
+                    </li>
+                    <li> 每天新手榜排名第一名的用户，将额外获得500元T点奖励（自动发放）。
+                        注：若新手榜第一名当日消耗大于荣誉榜第一名用户消耗，也可获赠小米Note手机一台。
+                    </li>
+
+                    <li>活动排名每天单独计算，所有指定的游戏共同累计。次日清空重新累计。用户可以查询当天的排名情况和前一天的分奖排名。
+                    </li>
+                    <li>  赠送的万里通积分/T点将在次日1点自动发放到玩家账户，发放时间可能有先后，请您耐心等待。
+                    </li>
+                </ul>
+            </ul>
+            <div class="rc-con">
+                <span class="rc-con-title">最终实物奖</span>
+                <ul>
+                        <li> 从7月3日-7月30日在荣誉榜押注排名前列的玩家可以获得。</li>
+                        <li class="word-color">一等奖 1名  智能两轮平衡车或等值10000元T点。
+                            （7月3日-7月30日累计押注第1名用户）；
+                        </li>
+                        <li class="word-color">二等奖 3名  AppleWatch Sport版38mm或等值2500元T点
+                            （7月3日-7月30日累计押注第2-4名用户）；
+                        </li>
+                        <li class="word-color">三等奖 10名 价值200元T点
+                            （7月3日-7月30日累计押注第5-14名用户）；
+                        </li>
+                        <li>终极奖励将在活动结束7个工作日内公布并联系中奖用户。</li>
+                        <li>终极奖励需要用户绑定手机号码，请保持手机畅通，我们将及时与中奖用户取得联系。若在中奖名单公布后超过7个工作日未能联系上，视为该用户放弃获奖权利。
+                        </li>
+                        <li>活动期间如有几名用户所押注总额同时达到上限，则先达到该上限的用户为第一名。其余名次按时间顺延。
+                        </li>
+                        <li> 关于本活动如有任何疑问，请联系官方客服 : <span  class="word-color">400 636 6612</span>。</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/files/js/zepto-1.1.6.js?v=201507131609"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.check-tab .tab-one').click(function(e) {
+            $(this).addClass('cur').siblings().removeClass('cur')
+            var num = $(this).index()
+            $(this).parents('.pg-check').find('.tab-detail').eq(num).show().siblings().hide()
+
+        });
+        $('.list-news .pg-list-tab span').click(function(e) {
+            $(this).addClass('tab-cur').siblings().removeClass('tab-cur')
+            var num = $(this).index()
+            $('.pg-list-down .pg-check').eq(num).show().siblings().hide()
+        });
+        $('.pg-rule').click(function(e) {
+            $('.rule-cover').show();
+        });
+        $('.c-close').click(function(e) {
+            $('.rule-cover').hide();
+        });
+    });
+
+
+    !(function(){
+        //数据埋点js
+        var _paq = {site:'gameapp',domain:window.location.host};
+        _paq.userId = '';
+        _paq.userType = 0;
+        if(location.protocol.toLowerCase() == "http:"){
+            document.write(decodeURIComponent("%3Cscript src='//h1.jkimg.net/webstat/pa_beacon_cdn.js' type='text/javascript' %3E%3C/script%3E"));
+        }else{
+            document.write(decodeURIComponent("%3Cscript src='//webstat.wanlitong.com/js/pa_beacon_https.js' type='text/javascript' %3E%3C/script%3E"));
+        }
+    })();
+</script>
+</body>
+</html>
+1:   {"statusCode":"0000","Matrix":{"1":[7,6,7],"2":[9,9,7],"3":[9,9,7],"4":[3,3,6],"5":[2,3,5]},"lines":[{"num":3,"val":[[1,3],[2,3],[3,3]]}],"prizeAmount":14000,"rewardPoint":0,"fu":{"statusCode":"0000","point":368542,"batchNo":"FP_3838_74_14346300887"}}
+2:   {"statusCode":"0000","Matrix":{"1":[4,2,7],"2":[9,9,7],"3":[9,9,9],"4":[9,8,9],"5":[4,1,4]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":368632,"batchNo":"FP_3838_74_14346300887"}}
+3:   {"statusCode":"0000","Matrix":{"1":[9,5,3],"2":[5,6,8],"3":[9,5,5],"4":[7,1,2],"5":[7,2,6]},"lines":[{"num":9,"val":[[1,2],[2,1],[3,2]]}],"prizeAmount":10000,"rewardPoint":0,"fu":{"statusCode":"0000","point":368722,"batchNo":"FP_3838_74_14346300887"}}
+4:   {"statusCode":"0000","Matrix":{"1":[5,4,9],"2":[9,9,9],"3":[8,2,2],"4":[6,3,4],"5":[1,9,4]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":368812,"batchNo":"FP_3838_74_14346300887"}}
+5:   {"statusCode":"0000","Matrix":{"1":[6,6,8],"2":[9,9,6],"3":[9,6,1],"4":[7,1,2],"5":[7,1,5]},"lines":[{"num":8,"val":[[1,2],[2,3],[3,2]]}],"prizeAmount":12000,"rewardPoint":0,"fu":{"statusCode":"0000","point":368902,"batchNo":"FP_3838_74_14346300887"}}
+6:   {"statusCode":"0000","Matrix":{"1":[8,9,1],"2":[9,9,1],"3":[9,8,9],"4":[8,5,2],"5":[7,8,4]},"lines":[{"num":3,"val":[[1,3],[2,3]]},{"num":7,"val":[[1,3],[2,3]]}],"prizeAmount":2000,"rewardPoint":0,"fu":{"statusCode":"0000","point":368992,"batchNo":"FP_3838_74_14346300887"}}
+7:   {"statusCode":"0000","Matrix":{"1":[5,2,4],"2":[9,2,1],"3":[9,2,3],"4":[2,7,7],"5":[4,3,3]},"lines":[{"num":1,"val":[[1,2],[2,2],[3,2]]}],"prizeAmount":4000,"rewardPoint":0,"fu":{"statusCode":"0000","point":369082,"batchNo":"FP_3838_74_14346300887"}}
+8:   {"statusCode":"0000","Matrix":{"1":[3,8,4],"2":[9,9,8],"3":[9,9,9],"4":[1,9,1],"5":[4,5,6]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":369172,"batchNo":"FP_3838_74_14346300887"}}
+9:   {"statusCode":"0000","Matrix":{"1":[7,9,2],"2":[9,9,2],"3":[9,2,3],"4":[3,2,5],"5":[5,2,9]},"lines":[{"num":7,"val":[[1,3],[2,3],[3,2]]}],"prizeAmount":4000,"rewardPoint":0,"fu":{"statusCode":"0000","point":369262,"batchNo":"FP_3838_74_14346300887"}}
+10:   {"statusCode":"0000","Matrix":{"1":[4,7,5],"2":[9,4,5],"3":[9,9,4],"4":[1,9,4],"5":[8,7,5]},"lines":[{"num":4,"val":[[1,1],[2,2],[3,3]]}],"prizeAmount":8000,"rewardPoint":0,"fu":{"statusCode":"0000","point":369352,"batchNo":"FP_3838_74_14346300887"}}
+11:   {"statusCode":"0000","Matrix":{"1":[2,3,4],"2":[9,9,4],"3":[9,9,9],"4":[4,9,4],"5":[1,3,3]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":369442,"batchNo":"FP_3838_74_14346300887"}}
+12:   {"statusCode":"0000","Matrix":{"1":[5,5,6],"2":[9,9,6],"3":[9,9,9],"4":[7,3,4],"5":[5,1,8]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":369532,"batchNo":"FP_3838_74_14346300887"}}
+13:   {"statusCode":"0000","Matrix":{"1":[7,2,6],"2":[9,9,7],"3":[9,9,9],"4":[2,3,1],"5":[2,2,9]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":369622,"batchNo":"FP_3838_74_14346300887"}}
+14:   {"statusCode":"0000","Matrix":{"1":[8,6,2],"2":[9,9,8],"3":[9,9,9],"4":[6,1,8],"5":[8,4,5]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":369712,"batchNo":"FP_3838_74_14346300887"}}
+15:   {"statusCode":"0000","Matrix":{"1":[5,8,5],"2":[9,9,8],"3":[9,9,9],"4":[1,4,3],"5":[5,3,9]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":369802,"batchNo":"FP_3838_74_14346300887"}}
+16:   {"statusCode":"0000","Matrix":{"1":[7,7,7],"2":[9,9,7],"3":[9,9,9],"4":[5,5,7],"5":[4,8,9]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":369892,"batchNo":"FP_3838_74_14346300887"}}
+17:   {"statusCode":"0000","Matrix":{"1":[3,6,2],"2":[9,9,6],"3":[9,9,9],"4":[8,2,2],"5":[7,2,3]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":369982,"batchNo":"FP_3838_74_14346300887"}}
+18:   {"statusCode":"0000","Matrix":{"1":[4,5,1],"2":[9,9,1],"3":[9,9,9],"4":[4,9,2],"5":[4,4,8]},"lines":[{"num":3,"val":[[1,3],[2,3]]},{"num":7,"val":[[1,3],[2,3]]}],"prizeAmount":2000,"rewardPoint":0,"fu":{"statusCode":"0000","point":370072,"batchNo":"FP_3838_74_14346300887"}}
+19:   {"statusCode":"0000","Matrix":{"1":[3,5,5],"2":[9,9,5],"3":[9,9,9],"4":[7,5,3],"5":[9,8,5]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":370162,"batchNo":"FP_3838_74_14346300887"}}
+20:   {"statusCode":"0000","Matrix":{"1":[6,4,4],"2":[9,6,9],"3":[9,9,6],"4":[5,7,3],"5":[3,5,7]},"lines":[{"num":4,"val":[[1,1],[2,2],[3,3]]}],"prizeAmount":12000,"rewardPoint":0,"fu":{"statusCode":"0000","point":370252,"batchNo":"FP_3838_74_14346300887"}}
+21:   {"statusCode":"0000","Matrix":{"1":[6,9,1],"2":[9,9,1],"3":[9,1,2],"4":[7,2,7],"5":[2,7,5]},"lines":[{"num":3,"val":[[1,3],[2,3]]},{"num":7,"val":[[1,3],[2,3],[3,2]]}],"prizeAmount":3000,"rewardPoint":0,"fu":{"statusCode":"0000","point":370342,"batchNo":"FP_3838_74_14346300887"}}
+22:   {"statusCode":"0000","Matrix":{"1":[8,9,3],"2":[9,9,9],"3":[9,8,1],"4":[6,5,2],"5":[8,8,6]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":370432,"batchNo":"FP_3838_74_14346300887"}}
+23:   {"statusCode":"0000","Matrix":{"1":[9,1,4],"2":[9,9,9],"3":[8,3,8],"4":[8,3,5],"5":[6,4,9]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":370522,"batchNo":"FP_3838_74_14346300887"}}
+24:   {"statusCode":"0000","Matrix":{"1":[2,8,1],"2":[9,9,8],"3":[9,9,9],"4":[9,3,6],"5":[3,3,8]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":370612,"batchNo":"FP_3838_74_14346300887"}}
+25:   {"statusCode":"0000","Matrix":{"1":[1,2,5],"2":[1,9,4],"3":[9,1,3],"4":[8,8,2],"5":[9,1,7]},"lines":[{"num":2,"val":[[1,1],[2,1]]},{"num":6,"val":[[1,1],[2,1],[3,2]]}],"prizeAmount":3000,"rewardPoint":0,"fu":{"statusCode":"0000","point":370702,"batchNo":"FP_3838_74_14346300887"}}
+26:   {"statusCode":"0000","Matrix":{"1":[5,5,2],"2":[9,9,5],"3":[9,9,9],"4":[3,6,9],"5":[6,2,1]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":370792,"batchNo":"FP_3838_74_14346300887"}}
+27:   {"statusCode":"0000","Matrix":{"1":[9,4,5],"2":[9,9,4],"3":[9,4,5],"4":[1,6,6],"5":[9,7,8]},"lines":[{"num":2,"val":[[1,1],[2,1],[3,1]]},{"num":8,"val":[[1,2],[2,3],[3,2]]}],"prizeAmount":26000,"rewardPoint":0,"fu":{"statusCode":"0000","point":370882,"batchNo":"FP_3838_74_14346300887"}}
+28:   {"statusCode":"0000","Matrix":{"1":[4,7,6],"2":[9,9,7],"3":[9,7,2],"4":[6,5,6],"5":[8,3,6]},"lines":[{"num":8,"val":[[1,2],[2,3],[3,2]]}],"prizeAmount":14000,"rewardPoint":0,"fu":{"statusCode":"0000","point":370972,"batchNo":"FP_3838_74_14346300887"}}
+29:   {"statusCode":"0000","Matrix":{"1":[5,2,4],"2":[9,5,4],"3":[9,9,5],"4":[1,6,3],"5":[3,1,8]},"lines":[{"num":4,"val":[[1,1],[2,2],[3,3]]}],"prizeAmount":10000,"rewardPoint":0,"fu":{"statusCode":"0000","point":371062,"batchNo":"FP_3838_74_14346300887"}}
+30:   {"statusCode":"0000","Matrix":{"1":[8,4,8],"2":[9,9,4],"3":[9,4,8],"4":[3,2,5],"5":[3,1,5]},"lines":[{"num":8,"val":[[1,2],[2,3],[3,2]]}],"prizeAmount":8000,"rewardPoint":0,"fu":{"statusCode":"0000","point":371152,"batchNo":"FP_3838_74_14346300887"}}
+31:   {"statusCode":"0000","Matrix":{"1":[6,6,1],"2":[9,9,6],"3":[9,9,9],"4":[8,7,1],"5":[3,2,8]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":371242,"batchNo":"FP_3838_74_14346300887"}}
+32:   {"statusCode":"0000","Matrix":{"1":[7,1,5],"2":[9,9,1],"3":[9,9,9],"4":[2,2,8],"5":[8,9,5]},"lines":[{"num":8,"val":[[1,2],[2,3]]}],"prizeAmount":1000,"rewardPoint":0,"fu":{"statusCode":"0000","point":371332,"batchNo":"FP_3838_74_14346300887"}}
+33:   {"statusCode":"0000","Matrix":{"1":[9,8,3],"2":[9,9,9],"3":[8,1,8],"4":[4,8,9],"5":[6,6,8]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":371422,"batchNo":"FP_3838_74_14346300887"}}
+34:   {"statusCode":"0000","Matrix":{"1":[1,8,9],"2":[9,1,5],"3":[9,9,9],"4":[6,6,2],"5":[3,9,2]},"lines":[{"num":4,"val":[[1,1],[2,2]]}],"prizeAmount":1000,"rewardPoint":0,"fu":{"statusCode":"0000","point":371512,"batchNo":"FP_3838_74_14346300887"}}
+35:   {"statusCode":"0000","Matrix":{"1":[1,7,6],"2":[9,9,7],"3":[9,9,9],"4":[8,6,5],"5":[8,3,7]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":371602,"batchNo":"FP_3838_74_14346300887"}}
+36:   {"statusCode":"0000","Matrix":{"1":[6,5,2],"2":[9,9,5],"3":[9,5,7],"4":[8,6,3],"5":[6,3,5]},"lines":[{"num":8,"val":[[1,2],[2,3],[3,2]]}],"prizeAmount":10000,"rewardPoint":0,"fu":{"statusCode":"0000","point":371692,"batchNo":"FP_3838_74_14346300887"}}
+37:   {"statusCode":"0000","Matrix":{"1":[2,9,6],"2":[2,8,9],"3":[9,2,1],"4":[9,5,4],"5":[5,5,6]},"lines":[{"num":6,"val":[[1,1],[2,1],[3,2]]}],"prizeAmount":4000,"rewardPoint":0,"fu":{"statusCode":"0000","point":371782,"batchNo":"FP_3838_74_14346300887"}}
+38:   {"statusCode":"0000","Matrix":{"1":[5,1,9],"2":[9,9,1],"3":[9,1,3],"4":[3,7,5],"5":[3,2,3]},"lines":[{"num":5,"val":[[1,3],[2,2],[3,1]]},{"num":8,"val":[[1,2],[2,3],[3,2]]}],"prizeAmount":20000,"rewardPoint":0,"fu":{"statusCode":"0000","point":371872,"batchNo":"FP_3838_74_14346300887"}}
+39:   {"statusCode":"0000","Matrix":{"1":[4,3,3],"2":[9,9,4],"3":[9,9,9],"4":[6,4,7],"5":[9,1,6]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":371962,"batchNo":"FP_3838_74_14346300887"}}
+40:   {"statusCode":"0000","Matrix":{"1":[2,8,2],"2":[9,9,2],"3":[9,9,2],"4":[7,7,4],"5":[2,2,8]},"lines":[{"num":3,"val":[[1,3],[2,3],[3,3]]}],"prizeAmount":4000,"rewardPoint":0,"fu":{"statusCode":"0000","point":372052,"batchNo":"FP_3838_74_14346300887"}}
+41:   {"statusCode":"0000","Matrix":{"1":[6,3,3],"2":[9,9,6],"3":[9,9,9],"4":[4,8,8],"5":[4,9,4]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":372142,"batchNo":"FP_3838_74_14346300887"}}
+42:   {"statusCode":"0000","Matrix":{"1":[7,1,8],"2":[9,9,1],"3":[9,9,9],"4":[7,5,2],"5":[8,2,4]},"lines":[{"num":8,"val":[[1,2],[2,3]]}],"prizeAmount":1000,"rewardPoint":0,"fu":{"statusCode":"0000","point":372232,"batchNo":"FP_3838_74_14346300887"}}
+43:   {"statusCode":"0000","Matrix":{"1":[4,9,6],"2":[9,9,9],"3":[9,8,6],"4":[1,1,3],"5":[8,5,3]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":372322,"batchNo":"FP_3838_74_14346300887"}}
+44:   {"statusCode":"0000","Matrix":{"1":[2,9,3],"2":[9,9,9],"3":[9,8,8],"4":[3,1,3],"5":[3,4,3]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":372412,"batchNo":"FP_3838_74_14346300887"}}
+45:   {"statusCode":"0000","Matrix":{"1":[1,4,2],"2":[9,1,9],"3":[9,9,9],"4":[7,6,6],"5":[4,2,2]},"lines":[{"num":4,"val":[[1,1],[2,2]]}],"prizeAmount":1000,"rewardPoint":0,"fu":{"statusCode":"0000","point":372502,"batchNo":"FP_3838_74_14346300887"}}
+46:   {"statusCode":"0000","Matrix":{"1":[8,7,5],"2":[9,9,7],"3":[9,7,9],"4":[8,7,4],"5":[5,6,2]},"lines":[{"num":8,"val":[[1,2],[2,3],[3,2]]}],"prizeAmount":14000,"rewardPoint":0,"fu":{"statusCode":"0000","point":372592,"batchNo":"FP_3838_74_14346300887"}}
+47:   {"statusCode":"0000","Matrix":{"1":[1,1,4],"2":[9,9,1],"3":[9,1,8],"4":[4,7,7],"5":[6,3,5]},"lines":[{"num":8,"val":[[1,2],[2,3],[3,2]]}],"prizeAmount":2000,"rewardPoint":0,"fu":{"statusCode":"0000","point":372682,"batchNo":"FP_3838_74_14346300887"}}
+48:   {"statusCode":"0000","Matrix":{"1":[3,2,5],"2":[9,9,5],"3":[9,9,9],"4":[8,2,5],"5":[9,2,9]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":372772,"batchNo":"FP_3838_74_14346300887"}}
+49:   {"statusCode":"0000","Matrix":{"1":[8,2,3],"2":[9,9,2],"3":[9,2,3],"4":[8,9,5],"5":[8,9,6]},"lines":[{"num":8,"val":[[1,2],[2,3],[3,2]]}],"prizeAmount":4000,"rewardPoint":0,"fu":{"statusCode":"0000","point":372862,"batchNo":"FP_3838_74_14346300887"}}
+50:   {"statusCode":"0000","Matrix":{"1":[8,6,9],"2":[9,9,8],"3":[8,9,3],"4":[7,5,6],"5":[2,6,3]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":372952,"batchNo":"FP_3838_74_14346300887"}}
+51:   {"statusCode":"0000","Matrix":{"1":[7,9,5],"2":[9,9,9],"3":[9,9,9],"4":[8,9,9],"5":[3,6,5]},"lines":[{"num":1,"val":[[1,2],[2,2],[3,2],[4,2]]},{"num":8,"val":[[1,2],[2,3],[3,2]]},{"num":9,"val":[[1,2],[2,1],[3,2],[4,3]]}],"prizeAmount":152000,"rewardPoint":0,"fu":{"statusCode":"0000","point":373042,"batchNo":"FP_3838_74_14346300887"}}
+52:   {"statusCode":"0000","Matrix":{"1":[2,8,6],"2":[9,9,8],"3":[9,9,9],"4":[2,2,1],"5":[1,8,2]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":373132,"batchNo":"FP_3838_74_14346300887"}}
+53:   {"statusCode":"0000","Matrix":{"1":[1,5,8],"2":[9,1,4],"3":[9,9,9],"4":[6,1,3],"5":[9,5,4]},"lines":[{"num":4,"val":[[1,1],[2,2]]}],"prizeAmount":1000,"rewardPoint":0,"fu":{"statusCode":"0000","point":373222,"batchNo":"FP_3838_74_14346300887"}}
+54:   {"statusCode":"0000","Matrix":{"1":[3,7,1],"2":[9,9,1],"3":[9,1,3],"4":[5,4,1],"5":[9,1,6]},"lines":[{"num":3,"val":[[1,3],[2,3]]},{"num":7,"val":[[1,3],[2,3],[3,2]]}],"prizeAmount":3000,"rewardPoint":0,"fu":{"statusCode":"0000","point":373312,"batchNo":"FP_3838_74_14346300887"}}
+55:   {"statusCode":"0000","Matrix":{"1":[3,8,4],"2":[9,9,8],"3":[9,9,9],"4":[2,5,7],"5":[2,7,9]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":373402,"batchNo":"FP_3838_74_14346300887"}}
+56:   {"statusCode":"0000","Matrix":{"1":[6,8,1],"2":[9,9,1],"3":[9,9,9],"4":[3,5,9],"5":[1,1,9]},"lines":[{"num":3,"val":[[1,3],[2,3]]},{"num":7,"val":[[1,3],[2,3]]}],"prizeAmount":2000,"rewardPoint":0,"fu":{"statusCode":"0000","point":373492,"batchNo":"FP_3838_74_14346300887"}}
+57:   {"statusCode":"0000","Matrix":{"1":[6,9,1],"2":[9,9,1],"3":[9,8,6],"4":[2,3,7],"5":[6,5,6]},"lines":[{"num":3,"val":[[1,3],[2,3]]},{"num":7,"val":[[1,3],[2,3]]}],"prizeAmount":2000,"rewardPoint":0,"fu":{"statusCode":"0000","point":373582,"batchNo":"FP_3838_74_14346300887"}}
+58:   {"statusCode":"0000","Matrix":{"1":[3,7,9],"2":[9,9,8],"3":[8,5,9],"4":[4,8,8],"5":[5,8,1]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":373672,"batchNo":"FP_3838_74_14346300887"}}
+59:   {"statusCode":"0000","Matrix":{"1":[5,8,9],"2":[9,9,8],"3":[8,9,7],"4":[6,4,5],"5":[6,9,7]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":373762,"batchNo":"FP_3838_74_14346300887"}}
+60:   {"statusCode":"0000","Matrix":{"1":[7,4,7],"2":[9,9,7],"3":[9,9,9],"4":[1,7,9],"5":[4,5,9]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":373852,"batchNo":"FP_3838_74_14346300887"}}
+61:   {"statusCode":"0000","Matrix":{"1":[1,8,6],"2":[9,1,5],"3":[9,9,9],"4":[4,9,1],"5":[2,7,7]},"lines":[{"num":4,"val":[[1,1],[2,2]]}],"prizeAmount":1000,"rewardPoint":0,"fu":{"statusCode":"0000","point":373942,"batchNo":"FP_3838_74_14346300887"}}
+62:   {"statusCode":"0000","Matrix":{"1":[3,1,9],"2":[9,1,9],"3":[9,1,2],"4":[1,5,5],"5":[5,4,6]},"lines":[{"num":1,"val":[[1,2],[2,2],[3,2]]}],"prizeAmount":2000,"rewardPoint":0,"fu":{"statusCode":"0000","point":374032,"batchNo":"FP_3838_74_14346300887"}}
+63:   {"statusCode":"0000","Matrix":{"1":[4,1,6],"2":[9,9,1],"3":[9,1,1],"4":[8,5,5],"5":[8,7,1]},"lines":[{"num":8,"val":[[1,2],[2,3],[3,2]]}],"prizeAmount":2000,"rewardPoint":0,"fu":{"statusCode":"0000","point":374122,"batchNo":"FP_3838_74_14346300887"}}
+64:   {"statusCode":"0000","Matrix":{"1":[9,5,3],"2":[9,9,9],"3":[8,5,8],"4":[6,8,3],"5":[4,6,6]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":374212,"batchNo":"FP_3838_74_14346300887"}}
+65:   {"statusCode":"0000","Matrix":{"1":[4,5,2],"2":[5,9,5],"3":[9,5,5],"4":[9,5,9],"5":[6,3,3]},"lines":[{"num":8,"val":[[1,2],[2,3],[3,2]]},{"num":9,"val":[[1,2],[2,1],[3,2]]}],"prizeAmount":20000,"rewardPoint":0,"fu":{"statusCode":"0000","point":374302,"batchNo":"FP_3838_74_14346300887"}}
+66:   {"statusCode":"0000","Matrix":{"1":[4,2,2],"2":[9,9,4],"3":[9,9,9],"4":[1,6,5],"5":[6,9,2]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":374392,"batchNo":"FP_3838_74_14346300887"}}
+67:   {"statusCode":"0000","Matrix":{"1":[6,4,9],"2":[9,9,9],"3":[8,4,1],"4":[2,8,4],"5":[8,7,1]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":374482,"batchNo":"FP_3838_74_14346300887"}}
+68:   {"statusCode":"0000","Matrix":{"1":[8,7,6],"2":[9,9,8],"3":[9,9,9],"4":[4,1,6],"5":[7,8,5]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":374572,"batchNo":"FP_3838_74_14346300887"}}
+69:   {"statusCode":"0000","Matrix":{"1":[2,6,7],"2":[9,9,6],"3":[9,6,7],"4":[7,3,3],"5":[5,4,9]},"lines":[{"num":8,"val":[[1,2],[2,3],[3,2]]}],"prizeAmount":12000,"rewardPoint":0,"fu":{"statusCode":"0000","point":374662,"batchNo":"FP_3838_74_14346300887"}}
+70:   {"statusCode":"0000","Matrix":{"1":[6,3,4],"2":[9,9,4],"3":[9,9,4],"4":[6,6,9],"5":[4,5,8]},"lines":[{"num":3,"val":[[1,3],[2,3],[3,3]]}],"prizeAmount":8000,"rewardPoint":0,"fu":{"statusCode":"0000","point":374752,"batchNo":"FP_3838_74_14346300887"}}
+71:   {"statusCode":"0000","Matrix":{"1":[2,9,7],"2":[2,7,4],"3":[9,2,4],"4":[1,1,3],"5":[4,1,4]},"lines":[{"num":6,"val":[[1,1],[2,1],[3,2]]}],"prizeAmount":4000,"rewardPoint":0,"fu":{"statusCode":"0000","point":374842,"batchNo":"FP_3838_74_14346300887"}}
+72:   {"statusCode":"0000","Matrix":{"1":[1,3,6],"2":[9,1,7],"3":[9,9,9],"4":[8,3,3],"5":[3,4,5]},"lines":[{"num":4,"val":[[1,1],[2,2]]}],"prizeAmount":1000,"rewardPoint":0,"fu":{"statusCode":"0000","point":374932,"batchNo":"FP_3838_74_14346300887"}}
+73:   {"statusCode":"0000","Matrix":{"1":[9,9,3],"2":[9,9,3],"3":[8,3,7],"4":[1,7,8],"5":[5,5,6]},"lines":[{"num":7,"val":[[1,3],[2,3],[3,2]]}],"prizeAmount":6000,"rewardPoint":0,"fu":{"statusCode":"0000","point":375022,"batchNo":"FP_3838_74_14346300887"}}
+74:   {"statusCode":"0000","Matrix":{"1":[3,5,4],"2":[9,9,5],"3":[9,9,9],"4":[6,8,3],"5":[8,2,5]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":375112,"batchNo":"FP_3838_74_14346300887"}}
+75:   {"statusCode":"0000","Matrix":{"1":[3,4,4],"2":[9,9,4],"3":[9,9,4],"4":[1,1,5],"5":[8,7,1]},"lines":[{"num":3,"val":[[1,3],[2,3],[3,3]]}],"prizeAmount":8000,"rewardPoint":0,"fu":{"statusCode":"0000","point":375202,"batchNo":"FP_3838_74_14346300887"}}
+76:   {"statusCode":"0000","Matrix":{"1":[7,6,2],"2":[9,9,2],"3":[9,9,2],"4":[1,9,8],"5":[4,3,9]},"lines":[{"num":3,"val":[[1,3],[2,3],[3,3]]}],"prizeAmount":4000,"rewardPoint":0,"fu":{"statusCode":"0000","point":375292,"batchNo":"FP_3838_74_14346300887"}}
+77:   {"statusCode":"0000","Matrix":{"1":[3,6,6],"2":[9,9,6],"3":[9,9,9],"4":[1,2,1],"5":[2,1,7]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":375382,"batchNo":"FP_3838_74_14346300887"}}
+78:   {"statusCode":"0000","Matrix":{"1":[1,5,3],"2":[9,1,6],"3":[9,9,1],"4":[9,8,7],"5":[2,1,2]},"lines":[{"num":4,"val":[[1,1],[2,2],[3,3]]}],"prizeAmount":2000,"rewardPoint":0,"fu":{"statusCode":"0000","point":375472,"batchNo":"FP_3838_74_14346300887"}}
+79:   {"statusCode":"0000","Matrix":{"1":[3,6,9],"2":[9,9,9],"3":[8,6,7],"4":[2,8,6],"5":[5,8,8]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":375562,"batchNo":"FP_3838_74_14346300887"}}
+80:   {"statusCode":"0000","Matrix":{"1":[2,1,3],"2":[9,9,3],"3":[9,9,3],"4":[3,5,2],"5":[5,3,3]},"lines":[{"num":3,"val":[[1,3],[2,3],[3,3]]}],"prizeAmount":6000,"rewardPoint":0,"fu":{"statusCode":"0000","point":375652,"batchNo":"FP_3838_74_14346300887"}}
+81:   {"statusCode":null,"Matrix":{"1":[8,5,2],"2":[9,9,8],"3":[9,9,9],"4":[8,2,4],"5":[5,8,6]},"lines":[],"rewardPoint":0,"fu":{"statusCode":"0000","point":375742,"batchNo":"FP_3838_74_14346300887"}}
+82:   {"statusCode":"0000","Matrix":{"1":[2,6,2],"2":[9,9,2],"3":[9,9,2],"4":[3,6,8],"5":[6,4,3]},"lines":[{"num":3,"val":[[1,3],[2,3],[3,3]]}],"prizeAmount":4000,"rewardPoint":0,"fu":{"statusCode":"0000","point":375832,"batchNo":"FP_3838_74_14346300887"}}
+83:   {"statusCode":"0000","Matrix":{"1":[6,2,2],"2":[9,9,2],"3":[9,9,2],"4":[1,7,5],"5":[7,7,5]},"lines":[{"num":3,"val":[[1,3],[2,3],[3,3]]}],"prizeAmount":4000,"rewardPoint":0,"fu":{"statusCode":"0000","point":375922,"batchNo":"FP_3838_74_14346300887"}}
+84:   {"statusCode":"0000","Matrix":{"1":[7,5,8],"2":[9,7,5],"3":[9,9,7],"4":[1,9,7],"5":[2,9,6]},"lines":[{"num":4,"val":[[1,1],[2,2],[3,3]]}],"prizeAmount":14000,"rewardPoint":0,"fu":{"statusCode":"0000","point":376012,"batchNo":"FP_3838_74_14346300887"}}
+85:   {"statusCode":"0000","Matrix":{"1":[1,5,5],"2":[9,9,5],"3":[9,9,5],"4":[6,3,9],"5":[7,8,5]},"lines":[{"num":3,"val":[[1,3],[2,3],[3,3]]}],"prizeAmount":10000,"rewardPoint":0,"fu":{"statusCode":"0000","point":376102,"batchNo":"FP_3838_74_14346300887"}}
+86:   {"statusCode":"0000","Matrix":{"1":[2,5,5],"2":[9,9,5],"3":[9,9,9],"4":[6,2,7],"5":[5,8,7]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":376192,"batchNo":"FP_3838_74_14346300887"}}
+87:   {"statusCode":"0000","Matrix":{"1":[9,2,5],"2":[9,9,9],"3":[8,6,5],"4":[5,2,3],"5":[5,8,9]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":376282,"batchNo":"FP_3838_74_14346300887"}}
+88:   {"statusCode":"0000","Matrix":{"1":[1,7,6],"2":[9,1,5],"3":[9,9,1],"4":[3,6,5],"5":[9,3,1]},"lines":[{"num":4,"val":[[1,1],[2,2],[3,3]]}],"prizeAmount":2000,"rewardPoint":0,"fu":{"statusCode":"0000","point":376372,"batchNo":"FP_3838_74_14346300887"}}
+89:   {"statusCode":"0000","Matrix":{"1":[3,1,6],"2":[9,9,1],"3":[9,9,9],"4":[7,3,5],"5":[6,1,1]},"lines":[{"num":8,"val":[[1,2],[2,3]]}],"prizeAmount":1000,"rewardPoint":0,"fu":{"statusCode":"0000","point":376462,"batchNo":"FP_3838_74_14346300887"}}
+90:   {"statusCode":"0000","Matrix":{"1":[4,4,3],"2":[9,9,4],"3":[9,4,9],"4":[9,6,6],"5":[9,1,9]},"lines":[{"num":8,"val":[[1,2],[2,3],[3,2]]}],"prizeAmount":8000,"rewardPoint":0,"fu":{"statusCode":"0000","point":376552,"batchNo":"FP_3838_74_14346300887"}}
+91:   {"statusCode":"0000","Matrix":{"1":[1,7,3],"2":[1,5,6],"3":[9,1,1],"4":[3,3,8],"5":[8,4,2]},"lines":[{"num":2,"val":[[1,1],[2,1]]},{"num":6,"val":[[1,1],[2,1],[3,2]]}],"prizeAmount":3000,"rewardPoint":0,"fu":{"statusCode":"0000","point":376642,"batchNo":"FP_3838_74_14346300887"}}
+92:   {"statusCode":"0000","Matrix":{"1":[7,9,8],"2":[9,9,9],"3":[9,8,1],"4":[6,2,4],"5":[1,2,2]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":376732,"batchNo":"FP_3838_74_14346300887"}}
+93:   {"statusCode":"0000","Matrix":{"1":[1,6,2],"2":[9,9,2],"3":[9,9,2],"4":[3,9,6],"5":[5,2,2]},"lines":[{"num":3,"val":[[1,3],[2,3],[3,3]]}],"prizeAmount":4000,"rewardPoint":0,"fu":{"statusCode":"0000","point":376822,"batchNo":"FP_3838_74_14346300887"}}
+94:   {"statusCode":"0000","Matrix":{"1":[1,8,9],"2":[9,1,6],"3":[9,9,1],"4":[8,5,6],"5":[4,9,8]},"lines":[{"num":4,"val":[[1,1],[2,2],[3,3]]}],"prizeAmount":2000,"rewardPoint":0,"fu":{"statusCode":"0000","point":376912,"batchNo":"FP_3838_74_14346300887"}}
+95:   {"statusCode":"0000","Matrix":{"1":[6,5,9],"2":[9,6,5],"3":[9,9,6],"4":[1,5,2],"5":[3,3,7]},"lines":[{"num":4,"val":[[1,1],[2,2],[3,3]]}],"prizeAmount":12000,"rewardPoint":0,"fu":{"statusCode":"0000","point":377002,"batchNo":"FP_3838_74_14346300887"}}
+96:   {"statusCode":"0000","Matrix":{"1":[7,1,9],"2":[9,9,9],"3":[9,8,6],"4":[2,8,5],"5":[3,4,8]},"lines":[{"num":5,"val":[[1,3],[2,2],[3,1]]}],"prizeAmount":18000,"rewardPoint":0,"fu":{"statusCode":"0000","point":377092,"batchNo":"FP_3838_74_14346300887"}}
+97:   {"statusCode":"0000","Matrix":{"1":[1,8,5],"2":[9,1,7],"3":[9,9,1],"4":[8,8,1],"5":[8,4,1]},"lines":[{"num":4,"val":[[1,1],[2,2],[3,3]]}],"prizeAmount":2000,"rewardPoint":0,"fu":{"statusCode":"0000","point":377182,"batchNo":"FP_3838_74_14346300887"}}
+98:   {"statusCode":"0000","Matrix":{"1":[4,3,9],"2":[9,9,9],"3":[8,6,7],"4":[2,3,7],"5":[5,9,9]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":377272,"batchNo":"FP_3838_74_14346300887"}}
+99:   {"statusCode":"1","Matrix":{"1":[9,2,5],"2":[9,9,9],"3":[8,4,1],"4":[9,8,9],"5":[9,1,9]},"lines":[],"rewardPoint":0,"fu":{"statusCode":"0000","point":377272,"batchNo":"FP_3838_74_14346300887"}}
+100:   {"statusCode":"0000","Matrix":{"1":[3,2,3],"2":[9,9,2],"3":[9,2,4],"4":[7,6,1],"5":[6,5,2]},"lines":[{"num":8,"val":[[1,2],[2,3],[3,2]]}],"prizeAmount":4000,"rewardPoint":0,"fu":{"statusCode":"0000","point":377362,"batchNo":"FP_3838_74_14346300887"}}
+101:   {"statusCode":"0000","Matrix":{"1":[4,6,9],"2":[9,9,9],"3":[8,7,5],"4":[8,3,1],"5":[1,8,1]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":377452,"batchNo":"FP_3838_74_14346300887"}}
+102:   {"statusCode":"0000","Matrix":{"1":[9,9,2],"2":[9,9,9],"3":[8,6,3],"4":[5,9,7],"5":[6,3,9]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":377542,"batchNo":"FP_3838_74_14346300887"}}
+103:   {"statusCode":"0000","Matrix":{"1":[5,5,4],"2":[9,9,4],"3":[9,9,4],"4":[7,2,6],"5":[2,6,9]},"lines":[{"num":3,"val":[[1,3],[2,3],[3,3]]}],"prizeAmount":8000,"rewardPoint":0,"fu":{"statusCode":"0000","point":377632,"batchNo":"FP_3838_74_14346300887"}}
+104:   {"statusCode":"0000","Matrix":{"1":[6,2,8],"2":[9,9,8],"3":[9,9,9],"4":[2,8,9],"5":[6,7,8]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":377722,"batchNo":"FP_3838_74_14346300887"}}
+105:   {"statusCode":"0000","Matrix":{"1":[5,9,3],"2":[9,9,9],"3":[9,8,1],"4":[3,4,9],"5":[1,4,6]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":377812,"batchNo":"FP_3838_74_14346300887"}}
+106:   {"statusCode":"0000","Matrix":{"1":[2,3,5],"2":[9,2,1],"3":[9,9,2],"4":[6,5,1],"5":[1,3,4]},"lines":[{"num":4,"val":[[1,1],[2,2],[3,3]]}],"prizeAmount":4000,"rewardPoint":0,"fu":{"statusCode":"0000","point":377902,"batchNo":"FP_3838_74_14346300887"}}
+107:   {"statusCode":"0000","Matrix":{"1":[2,2,6],"2":[9,9,2],"3":[9,2,6],"4":[3,2,7],"5":[6,7,8]},"lines":[{"num":8,"val":[[1,2],[2,3],[3,2]]}],"prizeAmount":4000,"rewardPoint":0,"fu":{"statusCode":"0000","point":377992,"batchNo":"FP_3838_74_14346300887"}}
+108:   {"statusCode":"0000","Matrix":{"1":[2,3,5],"2":[9,2,8],"3":[9,9,2],"4":[1,1,2],"5":[7,2,7]},"lines":[{"num":4,"val":[[1,1],[2,2],[3,3]]}],"prizeAmount":4000,"rewardPoint":0,"fu":{"statusCode":"0000","point":378082,"batchNo":"FP_3838_74_14346300887"}}
+109:   {"statusCode":"0000","Matrix":{"1":[5,8,8],"2":[9,9,8],"3":[9,9,9],"4":[4,9,1],"5":[5,4,8]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":378172,"batchNo":"FP_3838_74_14346300887"}}
+110:   {"statusCode":"0000","Matrix":{"1":[7,2,7],"2":[9,9,2],"3":[9,2,8],"4":[6,5,8],"5":[1,9,3]},"lines":[{"num":8,"val":[[1,2],[2,3],[3,2]]}],"prizeAmount":4000,"rewardPoint":0,"fu":{"statusCode":"0000","point":378262,"batchNo":"FP_3838_74_14346300887"}}
+0: <!DOCTYPE html>
+<html>
+<head>
+    <title>7月积分排行榜</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="平安游戏,万里通游戏,游戏平台" />
+    <meta name="description" content="平安游戏，万里通游戏" />
+    <meta charset="utf-8" />
+    <meta name="copyright"  content="Copyright &copy;中国平安 版权所有" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="/files/css/activity/pointgame-wap/pointgame-wap-v6.css?v=201507292112" />
+    <script type="text/javascript" src="/files/js/main.js?v=201507292112"></script>
+    <script type="text/javascript">
+        !function(){
+            var htmlEl = document.getElementsByTagName('html')[0];
+            var fitPage = function(){
+                /* The calculate of with from zepto  */
+                var w = htmlEl.getBoundingClientRect().width;
+                w = Math.round(w);
+                w = w > 640 ? 640: w;
+                var newW = w/640 * 100;
+                htmlEl.style.fontSize = newW + 'px';
+            }
+            fitPage();
+
+            var t;
+            var func = function(){
+                clearTimeout(t);
+                t = setTimeout(fitPage, 25);
+            }
+            window.addEventListener('resize', func);
+        }();
+
+    </script>
+</head>
+<body>
+<div class="pointgame">
+    <div class="back-top"></div>
+    <div class="pg-top">
+        <span class="icons-bg pg-back" id='J_back' style='display: none;'></span>
+        
+        <script>
+            !function(){
+                var $back = document.getElementById('J_back');
+                if($back && window.PAG_JS && PAG_JS.downloadGame){
+                    $back.style.display = 'block';
+                    $back.addEventListener('click', function(e){
+                        e.preventDefault();
+                        var link = ''.substr(1);
+                        Client.openUrlInApp(link, "", 'WA');
+                    });
+                }
+            }();
+        </script>
+
+        <div class="pg-time">
+            <p class="pg-p1">2015年7月3日-8月8日</p>
+            <p class="pg-p2">活动期间，押注排名前列的玩家，可获得实物大奖哦!</p>
+        </div>
+        <a href="#rule-all" class="icons-bg pg-rule"></a>
+    </div>
+    <div class="pg-gifts">
+
+    </div>
+    <div class="pg-btn"><a href="?act=game_line&amp;st=play&amp;amount=1000&amp;line=9" class="btn-go">立即游戏</a></div>
+    <div class="list-news">
+        <div class="pg-list-down">
+            <div class="pg-check">
+                <div class="check-bg">
+                    <span class="icons-bg check-result"></span>
+                                            <span class="style-three">
+                            <span class="myrank">今日我的排名：</span><span class="ranknum">>100名</span>
+                        </span>
+                                    </div>
+                <div class="check-tab">
+                    <span class="icons-bg tab-one cur">今日排名</span>
+                    <span class="icons-bg tab-one">07月30日分奖</span>
+                    <span class="icons-bg tab-one">分奖说明</span>
+                </div>
+                <div class="check-detail">
+                    <div class="tab-detail">
+                                                <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                            <tr>
+                                <th width="30%">排名</th>
+                                <th width="35%">玩家名称（前100位）</th>
+                                <th width="35%">积分(个)</th>
+                            </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                                        </tbody>
+                        </table>
+                                            </div>
+                    <div class="tab-detail" style="display:none;">
+                                                <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                            <tr>
+                                <th width="30%">排名</th>
+                                <th width="35%">玩家名称（前50位）</th>
+                                <th width="35%">积分(个)</th>
+                            </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                                        </tbody>
+                        </table>
+                                            </div>
+                    <div class="tab-detail" style="display:none;">
+                        <table width="100%" cellpadding="0" cellpadding="0" class="pg-table">
+                            <thead>
+                                <tr>
+                                    <th width="30%">排名</th>
+                                    <th width="35%">T点数量（个）</th>
+                                    <th width="35%">价值（元）</th>
+                                </tr>
+                            </thead>
+                            <tbody class="pg-tbody">
+                                <tr>
+                                    <td ><span class="icons-bg num-four"></span></td>
+                                    <td class="yellow">100000</td>
+                                    <td class="yellow">200</td>
+                                </tr>
+                                <tr>
+                                    <td class=""><span class="icons-bg num-five"></span></td>
+                                    <td class="yellow">90000</td>
+                                    <td class="yellow">180</td>
+                                </tr>
+                                <tr>
+                                    <td class=""><span class="icons-bg num-six"></span></td>
+                                    <td class="yellow">75000</td>
+                                    <td class="yellow">150</td>
+                                </tr>
+                                <tr>
+                                    <td class="">4</td>
+                                    <td class="yellow">60000</td>
+                                    <td class="yellow">120</td>
+                                </tr>
+                                <tr>
+                                    <td class="">5</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">6</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">7</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">8</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">9</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">10</td>
+                                    <td class="yellow">40000</td>
+                                    <td class="yellow">80</td>
+                                </tr>
+                                <tr>
+                                    <td class="">11</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">12</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">13</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">14</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">15</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">16</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">17</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">18</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">19</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">20</td>
+                                    <td class="yellow">35000</td>
+                                    <td class="yellow">70</td>
+                                </tr>
+                                <tr>
+                                    <td class="">21</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">22</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">23</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">24</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">25</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">26</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">27</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">28</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">29</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">30</td>
+                                    <td class="yellow">30000</td>
+                                    <td class="yellow">60</td>
+                                </tr>
+                                <tr>
+                                    <td class="">31</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">32</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">33</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">34</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">35</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">36</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">37</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">38</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">39</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">40</td>
+                                    <td class="yellow">25000</td>
+                                    <td class="yellow">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="">41</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">42</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">43</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">44</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">45</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">46</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">47</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">48</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">49</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="">50</td>
+                                    <td class="yellow">20000</td>
+                                    <td class="yellow">40</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="rule-all" class="rule-all">
+        <div class="rule-main ra-main">
+            <span class="ra-title">游戏规则
+            </span>
+            <ul class="rule-con">
+                    <li>活动时间：2015年7月3日-8月8日</li>
+                    <li>在活动时间内，参与指定的积分游戏（疯狂猜大小、疯狂弹珠机、疯狂赛车、疯狂马戏团、疯狂小苹果、中超争霸、疯狂翻牌、疯狂轮盘、疯狂扑克、疯狂抢钻石、疯狂马戏团2） 且当天游戏押注总额排名前50的用户，将在次日1点的时候，获得万里通积分奖励。平安玩账户将获得等额的T点奖励。点击查看T点奖励规则。
+                    </li>
+                    <li>本期活动排名根据用户类型，分为荣誉榜和新手榜。</br>
+                        <span  class="word-color">A． 荣誉榜：活动之前注册过平安游戏的用户（不包含新注册用户）的押注总额累计排名。</span>
+                        </br>
+                        <span  class="word-color">B． 新手榜：所有新注册平安游戏的用户。</span>
+                    </li>
+                    <li>每天荣誉榜排名第一名的用户，都将额外获得小米Note手机一台（全网通版价值2099元）或等值2000元T点。
+                    </li>
+                    <li> 每天新手榜排名第一名的用户，将额外获得500元T点奖励（自动发放）。
+                        注：若新手榜第一名当日消耗大于荣誉榜第一名用户消耗，也可获赠小米Note手机一台。
+                    </li>
+
+                    <li>活动排名每天单独计算，所有指定的游戏共同累计。次日清空重新累计。用户可以查询当天的排名情况和前一天的分奖排名。
+                    </li>
+                    <li>  赠送的万里通积分/T点将在次日1点自动发放到玩家账户，发放时间可能有先后，请您耐心等待。
+                    </li>
+                </ul>
+            </ul>
+            <div class="rc-con">
+                <span class="rc-con-title">最终实物奖</span>
+                <ul>
+                        <li> 从7月3日-8月8日在荣誉榜押注排名前列的玩家可以获得。</li>
+                        <li class="word-color">一等奖 1名  智能两轮平衡车或等值10000元T点。
+                            （7月3日-8月8日累计押注第1名用户）；
+                        </li>
+                        <li class="word-color">二等奖 3名  AppleWatch Sport版38mm或等值2500元T点
+                            （7月3日-8月8日累计押注第2-4名用户）；
+                        </li>
+                        <li class="word-color">三等奖 10名 价值200元T点
+                            （7月3日-8月8日累计押注第5-14名用户）；
+                        </li>
+                        <li>终极奖励将在活动结束7个工作日内公布并联系中奖用户。</li>
+                        <li>终极奖励需要用户绑定手机号码，请保持手机畅通，我们将及时与中奖用户取得联系。若在中奖名单公布后超过7个工作日未能联系上，视为该用户放弃获奖权利。
+                        </li>
+                        <li>活动期间如有几名用户所押注总额同时达到上限，则先达到该上限的用户为第一名。其余名次按时间顺延。
+                        </li>
+                        <li> 关于本活动如有任何疑问，请联系官方客服 : <span  class="word-color">400 636 6612</span>。</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/files/js/zepto-1.1.6.js?v=201507292112"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.check-tab .tab-one').click(function(e) {
+            $(this).addClass('cur').siblings().removeClass('cur')
+            var num = $(this).index()
+            $(this).parents('.pg-check').find('.tab-detail').eq(num).show().siblings().hide()
+
+        });
+        $('.list-news .pg-list-tab span').click(function(e) {
+            $(this).addClass('tab-cur').siblings().removeClass('tab-cur')
+            var num = $(this).index()
+            $('.pg-list-down .pg-check').eq(num).show().siblings().hide()
+        });
+        $('.pg-rule').click(function(e) {
+            $('.rule-cover').show();
+        });
+        $('.c-close').click(function(e) {
+            $('.rule-cover').hide();
+        });
+    });
+
+
+    !(function(){
+        //数据埋点js
+        var _paq = {site:'gameapp',domain:window.location.host};
+        _paq.userId = '';
+        _paq.userType = 0;
+        if(location.protocol.toLowerCase() == "http:"){
+            document.write(decodeURIComponent("%3Cscript src='//h1.jkimg.net/webstat/pa_beacon_cdn.js' type='text/javascript' %3E%3C/script%3E"));
+        }else{
+            document.write(decodeURIComponent("%3Cscript src='//webstat.wanlitong.com/js/pa_beacon_https.js' type='text/javascript' %3E%3C/script%3E"));
+        }
+    })();
+</script>
+</body>
+</html>
+
+1:   {"statusCode":"0000","Matrix":{"1":[6,4,6],"2":[9,9,6],"3":[9,9,9],"4":[3,3,6],"5":[1,8,2]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":596010,"batchNo":"FP_3838_74_14346300887"}}
+2:   {"statusCode":"0000","Matrix":{"1":[3,1,6],"2":[9,9,6],"3":[9,9,9],"4":[2,9,3],"5":[3,6,6]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":596100,"batchNo":"FP_3838_74_14346300887"}}
+3:   {"statusCode":"0000","Matrix":{"1":[5,3,3],"2":[9,9,5],"3":[9,9,9],"4":[1,9,4],"5":[9,3,5]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":596190,"batchNo":"FP_3838_74_14346300887"}}
+4:   {"statusCode":"0000","Matrix":{"1":[8,5,6],"2":[9,9,8],"3":[9,9,9],"4":[8,9,1],"5":[4,4,5]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":596280,"batchNo":"FP_3838_74_14346300887"}}
+5:   {"statusCode":"0000","Matrix":{"1":[7,5,1],"2":[9,9,7],"3":[9,9,9],"4":[2,6,5],"5":[2,4,1]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":596370,"batchNo":"FP_3838_74_14346300887"}}
+6:   {"statusCode":"0000","Matrix":{"1":[2,8,6],"2":[9,9,8],"3":[9,9,9],"4":[4,5,5],"5":[7,2,1]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":596460,"batchNo":"FP_3838_74_14346300887"}}
+7:   {"statusCode":"0000","Matrix":{"1":[2,8,2],"2":[9,9,8],"3":[9,9,9],"4":[3,7,5],"5":[9,7,4]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":596550,"batchNo":"FP_3838_74_14346300887"}}
+8:   {"statusCode":"0000","Matrix":{"1":[5,5,3],"2":[9,5,3],"3":[9,5,3],"4":[8,4,6],"5":[8,7,7]},"lines":[{"num":1,"val":[[1,2],[2,2],[3,2]]},{"num":3,"val":[[1,3],[2,3],[3,3]]}],"prizeAmount":4000,"rewardPoint":0,"fu":{"statusCode":"0000","point":596640,"batchNo":"FP_3838_74_14346300887"}}
+9:   {"statusCode":"0000","Matrix":{"1":[2,6,7],"2":[9,9,7],"3":[9,9,9],"4":[5,8,2],"5":[8,9,5]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":596730,"batchNo":"FP_3838_74_14346300887"}}
+10:   {"statusCode":"0000","Matrix":{"1":[4,5,4],"2":[9,9,5],"3":[9,9,9],"4":[4,3,9],"5":[2,2,6]},"lines":[],"prizeAmount":0,"rewardPoint":0,"fu":{"statusCode":"0000","point":596820,"batchNo":"FP_3838_74_14346300887"}}
+0:   {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0:   {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0:   {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0:   {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+1:   {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+1: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+1: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>平安游戏</title>
+    <meta name="keywords" content="平安游戏,万里通游戏,游戏平台" />
+    <meta name="description" content="平安游戏，万里通游戏" />
+    <meta charset="utf-8" />
+    <meta name="author" content="m.pingan.com" />
+    <meta name="copyright"  content="Copyright &copy;中国平安 版权所有" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="/files/js/zepto-1.1.3.js?v=201512211559"></script>
+    <script type="text/javascript" src="/files/js/main.js?v=201512211559"></script>
+    <style type="text/css">
+    *{margin: 0;padding: 0;}
+    html,body{width: 100%;height: 100%;}
+    .maintenance-box{background-image: url(/files/images/activity/maintenance/maintenance_bg.jpg?v=201512211559);background-size: 100% auto; background-repeat: no-repeat; height: 100%;height: 100%;}
+    .maintenance-box .cont{position: absolute; bottom: 20%; width: 100%;}
+    .maintenance-box h1{font-size: 156%; color: #ffd346; margin-left: 20%;}
+    .maintenance-box p{font-size:80%; color: #c6c6c6; margin:10px 0 10px 20%;}
+    .button-box{text-align: center;}
+    .button-box span,
+    .button-box a{display: inline-block;text-align: center;font-size:80%; background-color: #ffc841; padding: 8px 15px; color: #342603; text-decoration: none}
+    .button-box span{margin-right: 10px;}
+    .cont1 {margin-left: 20%}
+    .cont1 span{color:#249f35; font-size:18px; margin-right:20px;}
+    </style>
+</head>
+<body>
+    <div class="maintenance-box">
+        <div class='cont'>
+            <h1>不好意思呦！</h1>
+            <div class="cont1"><span></span><br/><span></span></div>
+            <p>工程师紧急施工中… 请稍后尝试哦！</p>
+            <div class="button-box">
+            	<span onclick="location.reload()">看看好了没</span>
+                            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    $(function(){
+        //通过检测Native接口，判断是否是游戏大厅客户端打开的本页面
+        if(typeof(PAG_JS) != "undefined" && typeof(PAG_JS.downloadGame) != "undefined") {
+            $(".button-box span").after("<a link=\"/?act=index\" href=\"javascript:void(0)\" id=\"nativeBack\">返 回</a>");
+            $(".button-box span").next('a').click(function(){ 
+                 var link = $(this).attr('link'); 
+                 link = link.substr(1);
+                 Client.openUrlInApp(link, "", 'WA');
+            });
+        }
+    });
+
+	//左上角返回按钮
+    function go_back(){
+        if("" != ''){
+            window.location.href = '';
+    	}else if(window.history.length > 1){
+            window.history.go(-1);
+		}
+	}
+    
+	$("#go_back").click(function(){
+        go_back();
+    });
+	
+	function APP_onBack(){
+		window.location.href='wltcaipiao://goback';
+	}
+
+	//android返回按钮事件回调
+	function PAG_EVENT_onBack(){
+           Client.openUrlInApp('?act=index', "", 'WA');
+	}
+</script>
+</html>
+
+0: 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>平安游戏</title>
+    <meta name="keywords" content="平安游戏,万里通游戏,游戏平台" />
+    <meta name="description" content="平安游戏，万里通游戏" />
+    <meta charset="utf-8" />
+    <meta name="author" content="m.pingan.com" />
+    <meta name="copyright"  content="Copyright &copy;中国平安 版权所有" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="/files/js/zepto-1.1.3.js?v=201512211559"></script>
+    <script type="text/javascript" src="/files/js/main.js?v=201512211559"></script>
+    <style type="text/css">
+    *{margin: 0;padding: 0;}
+    html,body{width: 100%;height: 100%;}
+    .maintenance-box{background-image: url(/files/images/activity/maintenance/maintenance_bg.jpg?v=201512211559);background-size: 100% auto; background-repeat: no-repeat; height: 100%;height: 100%;}
+    .maintenance-box .cont{position: absolute; bottom: 20%; width: 100%;}
+    .maintenance-box h1{font-size: 156%; color: #ffd346; margin-left: 20%;}
+    .maintenance-box p{font-size:80%; color: #c6c6c6; margin:10px 0 10px 20%;}
+    .button-box{text-align: center;}
+    .button-box span,
+    .button-box a{display: inline-block;text-align: center;font-size:80%; background-color: #ffc841; padding: 8px 15px; color: #342603; text-decoration: none}
+    .button-box span{margin-right: 10px;}
+    .cont1 {margin-left: 20%}
+    .cont1 span{color:#249f35; font-size:18px; margin-right:20px;}
+    </style>
+</head>
+<body>
+    <div class="maintenance-box">
+        <div class='cont'>
+            <h1>不好意思呦！</h1>
+            <div class="cont1"><span></span><br/><span></span></div>
+            <p>工程师紧急施工中… 请稍后尝试哦！</p>
+            <div class="button-box">
+            	<span onclick="location.reload()">看看好了没</span>
+                            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    $(function(){
+        //通过检测Native接口，判断是否是游戏大厅客户端打开的本页面
+        if(typeof(PAG_JS) != "undefined" && typeof(PAG_JS.downloadGame) != "undefined") {
+            $(".button-box span").after("<a link=\"/?act=index\" href=\"javascript:void(0)\" id=\"nativeBack\">返 回</a>");
+            $(".button-box span").next('a').click(function(){ 
+                 var link = $(this).attr('link'); 
+                 link = link.substr(1);
+                 Client.openUrlInApp(link, "", 'WA');
+            });
+        }
+    });
+
+	//左上角返回按钮
+    function go_back(){
+        if("" != ''){
+            window.location.href = '';
+    	}else if(window.history.length > 1){
+            window.history.go(-1);
+		}
+	}
+    
+	$("#go_back").click(function(){
+        go_back();
+    });
+	
+	function APP_onBack(){
+		window.location.href='wltcaipiao://goback';
+	}
+
+	//android返回按钮事件回调
+	function PAG_EVENT_onBack(){
+           Client.openUrlInApp('?act=index', "", 'WA');
+	}
+</script>
+</html>
+
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
+0: {"message":"token\u4e0d\u80fd\u4e3a\u7a7a","statusCode":"100"}
